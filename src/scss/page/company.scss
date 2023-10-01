@@ -1,0 +1,85 @@
+.Company {
+  &_mv {
+    background-image: url(/img/bg_company.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  &_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 300px;
+  }
+  &_lead {
+    margin-block: 70px 120px;
+  }
+  &_list {
+    max-width: 520px;
+    margin-inline: auto;
+    &_item {
+      display: grid;
+      grid-template-columns: 107px 1fr;
+      align-items: baseline;
+      b {
+        font-size: $text-25;
+        font-weight: normal;
+      }
+    }
+    li + li {
+      margin-top: 32px;
+    }
+  }
+  &_container {
+    background-color: $black;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@include breakPoint(upper) {
+  .Company {
+    &_list {
+      &_item {
+        a[href^='tel:'] {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Company {
+    &_mv {
+      background-image: url(/img/bg_company_sp.png);
+    }
+    &_lead {
+      margin-block: 70px;
+    }
+    &_list {
+      max-width: unset;
+      margin-inline: unset;
+      width: 100%;
+      &_item {
+        grid-template-columns: 1fr;
+        b {
+          font-size: $text-20;
+        }
+        p:first-of-type {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &_contents {
+      padding-bottom: 100px;
+    }
+  }
+}

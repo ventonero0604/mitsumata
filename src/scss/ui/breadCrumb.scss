@@ -1,0 +1,31 @@
+.BreadCrumb {
+  display: flex;
+  align-items: center;
+  padding-block: 26px;
+  gap: 10px 20px;
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &:not(:last-of-type) {
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 6px solid $white;
+        border-right: 0;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .BreadCrumb {
+    flex-wrap: wrap;
+  }
+}

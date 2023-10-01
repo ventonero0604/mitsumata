@@ -1,0 +1,247 @@
+.Guide {
+  position: relative;
+  &_main {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+
+    &_contents {
+      position: relative;
+      z-index: 100;
+      .item {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+    }
+  }
+
+  &_history {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+
+    &_wrapper {
+      position: sticky;
+      background: $black;
+    }
+
+    &_contents {
+      position: relative;
+      z-index: 100;
+      .item {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+      }
+    }
+
+    &_title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .title {
+        font-size: $text-30;
+        &:after {
+          content: '';
+          display: block;
+          position: relative;
+          height: 78px;
+          width: 1px;
+          background-color: $white;
+          margin: 32px auto;
+        }
+      }
+      .name {
+        font-size: $text-28;
+        margin-top: 10px;
+      }
+    }
+
+    &_text {
+      line-height: 4;
+      text-align: center;
+    }
+  }
+
+  &_bg {
+    top: 0;
+    left: 0;
+    transition: all 0.8s;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    &.true {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.8s;
+      transform: scale(1.1);
+    }
+
+    &.disapper {
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.8s 0.4s;
+    }
+  }
+
+  &_gallery {
+    position: relative;
+    z-index: 200;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 2%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    padding-block: 150px;
+    width: 100%;
+    overflow: hidden;
+    .Carousel {
+      margin-top: 80px;
+      position: relative;
+      width: 100%;
+      .slick-slide {
+        background: $black;
+        padding-inline: 20px;
+      }
+      img {
+        opacity: 0.4;
+        display: block;
+        height: 100%;
+        max-height: 600px;
+        transform: scale(0.8);
+      }
+      .slick-center {
+        transform-origin: center center;
+        img {
+          opacity: 1;
+          transition: opacity 0.3s ease-in;
+          transform: scale(1);
+          max-height: 600px;
+        }
+        .Carousel_caption {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .slick-dots {
+        bottom: -60px;
+      }
+      & + .ContentsTitle {
+        margin-top: 170px;
+      }
+      &-caption {
+        .slick-list {
+          overflow: unset;
+        }
+        .slick-dots {
+          bottom: -160px;
+        }
+      }
+      &_item {
+        position: relative;
+      }
+      &_caption {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        font-size: $text-13;
+      }
+      .slick-center .Carousel_caption {
+        top: 105%;
+      }
+    }
+  }
+
+  &_container {
+    position: sticky;
+    z-index: 200;
+    background-color: $black;
+
+    padding-block: 150px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .Button_circle {
+    position: fixed;
+    left: 90px;
+    bottom: 90px;
+    z-index: 300;
+  }
+}
+
+@include breakPoint(sp) {
+  .Guide {
+    position: relative;
+    &_main {
+      &_contents {
+        .item {
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &_gallery {
+      padding-block: 100px;
+      .Carousel {
+        margin-top: 50px;
+        .slick-slide {
+          padding-inline: 5px;
+        }
+        img {
+          max-height: 270px;
+          max-width: 100vw;
+        }
+        .slick-center {
+          img {
+            max-height: 270px;
+            max-width: 100vw;
+          }
+        }
+        & + .ContentsTitle {
+          margin-top: 130px;
+        }
+        &-caption {
+          .slick-dots {
+            bottom: -120px;
+          }
+        }
+      }
+    }
+    &_history {
+      &_text {
+        line-height: 2;
+        padding-inline: 40px;
+      }
+    }
+    &_container {
+      padding-block: 70px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* foundation */
+@import './foundation/reset.scss';
+@import './foundation/variables.scss';
+@import './foundation/common.scss';
+@import './foundation/breakPoint.scss';
+@import './foundation/page.scss';
+@import './foundation/pxvw.scss';
+
+/* component */
+@import './component/annotation.scss';
+@import './component/indent.scss';
+@import './component/scrollDown.scss';
+@import './component/title.scss';
+@import './component/contentsTitle.scss';
+@import './component/sns.scss';
+@import './component/button.scss';
+@import './component/wrapper.scss';
+@import './component/pageTop.scss';
+
+/* ui */
+@import './ui/header.scss';
+@import './ui/menu.scss';
+@import './ui/infoList.scss';
+@import './ui/lodgeInfo.scss';
+@import './ui/breadCrumb.scss';
+@import './ui/filter.scss';
+@import './ui/footer.scss';
+
+/* page */
+@import './page/top.scss';
+@import './page/guide.scss';
+@import './page/info.scss';
+@import './page/article.scss';
+@import './page/contact.scss';
+@import './page/company.scss';
+@import './page/itoshindo.scss';
+
+/* libs */
+@import './libs/slick.scss';

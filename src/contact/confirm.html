@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  {{> meta}}
+  {{> webFont}}
+</head>
+
+<body>
+  {{> header}}
+  <main class="Contact">
+    <div class="Contact_mv">
+      <h2 class="ContentsTitle ContentsTitle-small ContentsTitle-center">お問い合わせ<span>CONTACT</span></h2>
+      <div class="Wrapper">
+        <div class="Contact_frame">
+          <h3 class="Contact_title">お問い合わせ内容の確認</h3>
+          <ul class="Contact_confirm">
+            <li>
+              <p>お名前 ＊</p>
+              <p>苗字 名前</p>
+            </li>
+            <li>
+              <p>フリガナ ＊</p>
+              <p>ミョウジ　ナマエ</p>
+            </li>
+            <li>
+              <p>メールアドレス ＊</p>
+              <p>xxx.xxx.ne.jp</p>
+            </li>
+            <li>
+              <p>電話番号</p>
+              <p>000-0000-0000</p>
+            </li>
+            <li class="align">
+              <p>お問い合わせ内容 ＊</p>
+              <p>
+                このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストはダミーです。このテキストは
+              </p>
+            </li>
+          </ul>
+          <input type="submit" class="Button Button_contact">
+
+          <!-- <h3 class="Contact_title">お問い合わせありがとうございました。</h3>
+          <div class="Contact_confirm">
+            <p class="text-center mx-auto">
+              この度はお問い合わせメールをお送りいただきありがとうございます。<br />
+              後ほど、担当者よりご連絡をさせていただきます。<br />
+              今しばらくお待ちくださいますようよろしくお願い申し上げます。
+            </p>
+          </div> -->
+        </div>
+      </div>
+      <div class="Contact_container">
+        <div class="Wrapper">
+          <ul class="BreadCrumb">
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li>お問い合わせ内容確認</li>
+          </ul>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

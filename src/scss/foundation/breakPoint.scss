@@ -1,0 +1,40 @@
+/**
+ * @mixin breakpoints
+ */
+
+$breakpoints: (
+  'menu': (
+    max-width: 1300px
+  ),
+  'sp': (
+    max-width: 768px
+  ),
+  'tablet': (
+    max-width: 1024px
+  ),
+  1200: (
+    max-width: 1200px
+  ),
+  1300: (
+    max-width: 1300px
+  ),
+  1500: (
+    max-width: 1500px
+  ),
+  'upper': (
+    min-width: 769px
+  )
+) !default;
+
+@mixin breakPoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  // マップ型で定義されていない値が呼び出された時はエラーを返す
+  @else {
+    @error "指定されたブレークポイントは定義されていません。" + "指定できるブレークポイントは次のとおりです。 -> #{map-keys($breakpoints)}";
+  }
+}

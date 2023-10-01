@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  {{> meta}}
+  {{> webFont}}
+</head>
+
+<body>
+  {{> header}}
+  <main class="Article">
+    <div class="Article_mv">
+      <div class="Wrapper">
+        <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span>NEWS</span></h2>
+        <h3 class="mt-6">三俣山荘</h3>
+        <p class="text-[1.4rem] mt-6">2023.00.00</p>
+
+        <section class="Article_source">
+          <h1>北アルプスに新しいプレイグラウンドを生み出す！一般社団法人ネオアルプスが賛助会員・企業賛助会員・準会員の募集を開始</h1>
+          <img src="https://placehold.jp/1160x759.png" alt="">
+          <div class="Article_source_inner">
+            <p>
+              DONATION PROGRAM
+              KEEN OUTDOOR コレクション売上の一部は「 一般社団法人 ネオアルプス 」を通じ、【 北アルプス 山と人と街 】プロジェクトの活動資金へ寄付されます。
+              KEEN OUTDOORコレクション売上の一部は「 一般社団法人 ネオアルプス 」を通じ、【 北アルプス 山と人と街 】プロジェクトの活動資金へ寄付されます。
+            </p>
+            <div class="Article_links">
+              <div>
+                <a href="#">&lt　前の記事に戻る</a>
+                <a href="#">次の記事を読む　></a>
+              </div>
+              <div>
+                <a href="#">&lt　お知らせ一覧に戻る</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="mt-25 mb-50 sp:mt-8 sp:mb-25">
+          <h3 class="text-[2.5rem]">関連記事</h3>
+          {{> news}}
+        </div>
+      </div>
+      <div class="Article_container">
+        <div class="Wrapper">
+          <ul class="BreadCrumb">
+            <li><a href="#">TOP</a></li>
+            <li><a href="#">お知らせ</a></li>
+            <li>お知らせのタイトルが入ります</li>
+          </ul>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

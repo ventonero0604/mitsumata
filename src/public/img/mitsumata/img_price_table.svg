@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="421" viewBox="0 0 800 421">
+  <g id="グループ_2885" data-name="グループ 2885" transform="translate(-540 -2796)">
+    <text id="平日" transform="translate(845 2838)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">平日</tspan></text>
+    <text id="週末と指定日" transform="translate(1007 2838)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">週末と指定日</tspan></text>
+    <text id="ハイシーズン" transform="translate(1199 2838)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">ハイシーズン</tspan></text>
+    <text id="素泊まり" transform="translate(621 2908)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">素泊まり</tspan></text>
+    <text id="_8_000円" data-name="8,000円" transform="translate(835 2908)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">8,000円</tspan></text>
+    <text id="_9_000円" data-name="9,000円" transform="translate(1027 2908)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">9,000円</tspan></text>
+    <text id="_10_000円" data-name="10,000円" transform="translate(1216 2908)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">10,000円</tspan></text>
+    <text id="_1泊2食" data-name="1泊2食" transform="translate(629 2978)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">1泊2食</tspan></text>
+    <text id="_12_000円" data-name="12,000円" transform="translate(831 2978)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">12,000円</tspan></text>
+    <text id="_13_000円" data-name="13,000円" transform="translate(1024 2978)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">13,000円</tspan></text>
+    <text id="_14_000円" data-name="14,000円" transform="translate(1216 2978)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">14,000円</tspan></text>
+    <text id="夕_食" data-name="夕　食" transform="translate(629 3048)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">夕　食</tspan></text>
+    <text id="_2_600円" data-name="2,600円" transform="translate(1027 3048)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">2,600円</tspan></text>
+    <text id="朝_食" data-name="朝　食" transform="translate(629 3118)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">朝　食</tspan></text>
+    <text id="_1_400円" data-name="1,400円" transform="translate(1028 3118)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">1,400円</tspan></text>
+    <text id="弁_当" data-name="弁　当" transform="translate(629 3188)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">弁　当</tspan></text>
+    <text id="_1_400円-2" data-name="1,400円" transform="translate(1028 3188)" fill="#fff" font-size="15" font-family="ShipporiMinchoB1-Regular, Shippori Mincho B1"><tspan x="0" y="0">1,400円</tspan></text>
+    <line id="線_11" data-name="線 11" x2="800" transform="translate(540 2796.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_12" data-name="線 12" x2="800" transform="translate(540 2866.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_18" data-name="線 18" y2="420.887" transform="translate(762.5 2796)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_19" data-name="線 19" y2="211.5" transform="translate(955.5 2796)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_20" data-name="線 20" y2="211.5" transform="translate(1147.5 2796)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_13" data-name="線 13" x2="800" transform="translate(540 3006.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_17" data-name="線 17" x2="800" transform="translate(540 2936.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_14" data-name="線 14" x2="800" transform="translate(540 3076.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_15" data-name="線 15" x2="800" transform="translate(540 3146.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_16" data-name="線 16" x2="800" transform="translate(540 3216.5)" fill="none" stroke="#707070" stroke-width="1"/>
+  </g>
+</svg>

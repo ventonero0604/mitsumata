@@ -1,0 +1,66 @@
+{{#if isTop}}
+<header class="Header is-top">
+  {{else}}
+  <header class="Header">
+    {{/if}}
+    <a href="/" class="Title Title-header">
+      <h1>
+        北アルプス黒部源流
+      </h1>
+      <span class="Text-small">Northern Alps Kurobe Genryu</span>
+    </a>
+    {{#if isBlack}}
+    <nav class="Header_navi Header_navi-black">
+      {{else}}
+      <nav class="Header_navi">
+        {{/if}}
+        <ul class="Header_navi_list">
+          <li class="Header_navi_list_item show">
+            <p class="Header_navi_list_toggle">三俣山荘</p>
+            <ul class="Header_navi_dropdown">
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/mitsumata/info/">宿泊情報</a>
+              </li>
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/mitsumata/guide/">三俣山荘の魅力</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Header_navi_list_item">
+            <p class="Header_navi_list_toggle">水晶小屋</p>
+            <ul class="Header_navi_dropdown">
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/suisho/info/">宿泊情報</a>
+              </li>
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/suisho/guide/">水晶小屋の魅力</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Header_navi_list_item">
+            <p class="Header_navi_list_toggle">湯俣山荘</p>
+            <ul class="Header_navi_dropdown">
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/yumata/info/">宿泊情報</a>
+              </li>
+              <li class="Header_navi_dropdown_item">
+                <a class="Header_navi_dropdown_link" href="/yumata/guide/">湯俣山荘の魅力</a>
+              </li>
+            </ul>
+          </li>
+          <li class="Header_navi_list_item">
+            <a href="/itoshindo/" class="Header_navi_listLink">伊藤新道</a>
+          </li>
+          <li class="Header_navi_list_item">
+            <a href="https://reserva.be/kurobegenryu" class="Header_navi_reserve" target="_blank">
+              <img src="/img/ico_calendar.svg" alt="宿泊予約フォーム">
+              宿泊予約フォーム
+            </a>
+          </li>
+          <li class="Header_navi_list_item">
+            <button type="button" class="Header_menu"><span></span></button>
+          </li>
+        </ul>
+      </nav>
+      {{> menu}}
+  </header>

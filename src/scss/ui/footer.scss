@@ -1,0 +1,123 @@
+.Footer {
+  padding-bottom: 110px;
+
+  &_banner {
+    display: flex;
+  }
+
+  &_contents {
+    display: flex;
+    margin-top: 150px;
+    gap: 0 100px;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &_title {
+    font-size: $text-20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      display: block;
+      margin-top: 20px;
+    }
+  }
+
+  &_small {
+    font-size: $text-16;
+    margin-block: 10px 14px;
+    align-self: flex-start;
+  }
+
+  &_list {
+    flex: 1;
+    border-top: 1px solid $gray-2;
+  }
+
+  &_listItem {
+    display: grid;
+    grid-template-columns: 233px 1fr;
+    border-bottom: 1px solid $gray-2;
+    align-items: center;
+    padding-block: 34px;
+    a {
+      font-size: $text-25;
+      &.normal {
+        font-size: $text-15;
+      }
+    }
+  }
+
+  &_attention {
+    font-size: $text-14;
+    margin-top: 30px;
+  }
+
+  small {
+    font-size: $text-13;
+    text-align: center;
+    display: block;
+    margin-top: 120px;
+  }
+}
+
+@include breakPoint(tablet) {
+  .Footer {
+    &_banner {
+      flex-direction: column;
+    }
+    &_contents {
+      flex-direction: column;
+      margin-top: 100px;
+      gap: 80px 0;
+    }
+    &_small {
+      align-self: center;
+    }
+    &_title {
+      font-size: $text-20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      span {
+        display: inline;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Footer {
+    &_listItem {
+      grid-template-columns: 1fr;
+      gap: 16px 0;
+      a {
+        font-size: $text-25;
+        &.normal {
+          font-size: $text-15;
+        }
+      }
+      b {
+        display: none;
+      }
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@include breakPoint(upper) {
+  .Footer {
+    a[href^='tel:'] {
+      pointer-events: none;
+    }
+  }
+}

@@ -1,0 +1,188 @@
+.Contact {
+  &_mv {
+    background-image: url(/img/bg_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-top: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  &_frame {
+    min-height: 600px;
+    padding-bottom: 150px;
+  }
+
+  &_title {
+    font-size: $text-30;
+    text-align: center;
+    margin-block: 70px;
+  }
+
+  &_list {
+    border-top: 1px solid $gray-2;
+    li {
+      border-bottom: 1px solid $gray-2;
+      padding: 30px 90px 30px 120px;
+    }
+    &_item {
+      display: grid;
+      grid-template-columns: 208px 1fr;
+      gap: 0 28px;
+      align-items: baseline;
+      a {
+        font-size: $text-25;
+      }
+      .ml {
+        margin-left: 12px;
+      }
+      .mr {
+        margin-right: 12px;
+      }
+    }
+  }
+
+  &_container {
+    background-color: $black;
+    position: relative;
+    z-index: 2;
+  }
+
+  &_links {
+    margin-top: 80px;
+    padding-block: 60px;
+    border-top: 1px solid $gray-2;
+    border-bottom: 1px solid $gray-2;
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    div + div {
+      margin-top: 20px;
+    }
+  }
+
+  &_source {
+    margin-top: 100px;
+    h1 {
+      font-size: $text-30;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    &_inner {
+      max-width: 760px;
+      margin-inline: auto;
+      padding-block: 80px;
+      line-height: 2;
+    }
+  }
+
+  &_form {
+    max-width: 840px;
+    margin-inline: auto;
+    li {
+      display: grid;
+      grid-template-columns: 172px 1fr;
+      align-items: center;
+      &.align {
+        align-items: flex-start;
+      }
+    }
+    li + li {
+      margin-top: 30px;
+    }
+    input,
+    textarea {
+      background-color: $white;
+      color: $black;
+      padding: 12px 20px;
+    }
+    textarea {
+      height: 250px;
+    }
+    .col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 10px;
+    }
+  }
+
+  &_confirm {
+    max-width: 870px;
+    margin-inline: auto;
+    li {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    li + li {
+      margin-top: 24px;
+    }
+    p {
+      line-height: 2;
+      max-width: 660px;
+    }
+  }
+}
+
+@include breakPoint(upper) {
+  .Contact {
+    &_mv {
+      padding-top: 130px;
+    }
+    &_list {
+      &_item {
+        a[href^='tel:'] {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Contact {
+    &_title {
+      font-size: $text-22;
+      margin-block: 70px;
+    }
+    &_list {
+      li {
+        padding: 20px 0;
+      }
+      &_item {
+        grid-template-columns: 1fr;
+        * + * {
+          margin-top: 12px;
+        }
+      }
+    }
+    &_form {
+      width: 100%;
+      overflow: hidden;
+      li {
+        grid-template-columns: 1fr;
+        align-items: center;
+        &.align {
+          align-items: flex-start;
+        }
+        .col {
+          grid-template-columns: 50% 50%;
+          min-width: 0;
+        }
+        p {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    &_confirm {
+      li {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  {{> meta}}
+  {{> webFont}}
+</head>
+
+<body>
+  {{> header}}
+  <main class="Article">
+    <div class="Article_mv Article_mv-feature">
+      <div class="Wrapper">
+        <h2 class="ContentsTitle ContentsTitle-small">特集<span>FEATURE</span></h2>
+        {{> filter}}
+        <div class="Article_contents">
+          {{> feature}}
+        </div>
+      </div>
+      <div class="Article_container">
+        <div class="Wrapper">
+          <ul class="BreadCrumb">
+            <li><a href="#">TOP</a></li>
+            <li>特集</li>
+          </ul>
+        </div>
+        {{> footer}}
+      </div>
+    </div>
+
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

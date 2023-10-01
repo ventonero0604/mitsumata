@@ -1,0 +1,237 @@
+.Info {
+  &_main {
+    position: relative;
+  }
+
+  &_wrapper {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    &-mitsumata {
+      background-image: url(/img/mitsumata/bg_info.png);
+    }
+    &-suisho {
+      background-image: url(/img/suisho/bg_info.png);
+    }
+    &-yumata {
+      background-image: url(/img/yumata/bg_info.png);
+    }
+  }
+
+  &_menu {
+    position: fixed;
+    top: 160px;
+    left: 40px;
+    z-index: 1;
+    &_title {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 30px;
+      font-size: $text-20;
+      display: flex;
+      align-items: center;
+      margin-top: 80px;
+      &:before {
+        content: '';
+        height: 24px;
+        border-left: 1px solid $white;
+        margin-right: 18px;
+      }
+    }
+    &_subTitle {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 16px;
+      margin-top: 16px;
+      font-size: $text-16;
+    }
+    &_list {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 24px;
+      margin-top: 30px;
+      li {
+        font-size: $text-14;
+      }
+      li + li {
+        margin-top: 16px;
+      }
+    }
+    &_toForm {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      &:after {
+        display: block;
+        content: '';
+        width: 26px;
+        height: 26px;
+        background-image: url(/img/ico_calendar.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  &_contents {
+    max-width: 1000px;
+    padding-top: 160px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    .ContentsTitle {
+      margin-bottom: 70px;
+    }
+  }
+
+  &_container {
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 3%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    z-index: 10;
+    padding-top: 140px;
+  }
+
+  &_text {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: baseline;
+    line-height: 2;
+
+    &_wrapper {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
+      &-nb {
+        border-bottom: none;
+        margin-bottom: unset;
+        padding-bottom: 50vh;
+      }
+      .slick-slide {
+        padding-inline: 20px;
+        img {
+          opacity: 0.4;
+          display: block;
+          height: 100%;
+          max-height: 600px;
+          transform: scale(0.8);
+        }
+      }
+      .slick-center {
+        transform-origin: center center;
+        img {
+          opacity: 1;
+          transition: opacity 0.3s ease-in;
+          transform: scale(1);
+          max-height: 600px;
+          object-fit: contain;
+          object-position: center;
+          transform-origin: center;
+        }
+      }
+      .slick-dots {
+        bottom: -60px;
+      }
+    }
+
+    &-image {
+      align-items: flex-start;
+    }
+
+    a {
+      font-size: $text-20;
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+
+    & + .ContentsTitle {
+      margin-top: 100px;
+    }
+
+    .col2 {
+      display: grid;
+      grid-template-columns: 70px 1fr 1fr;
+    }
+    .col3 {
+      display: grid;
+      grid-template-columns: 70px 152px 1fr;
+    }
+
+    small {
+      font-size: $text-13;
+    }
+  }
+}
+
+@include breakPoint(1500) {
+  .Info {
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Info {
+    &_wrapper {
+      &-mitsumata {
+        background-image: url(/img/mitsumata/bg_info_sp.png);
+      }
+      &-suisho {
+        background-image: url(/img/suisho/bg_info_sp.png);
+      }
+      &-yumata {
+        background-image: url(/img/yumata/bg_info_sp.png);
+      }
+    }
+    &_contents {
+      .ContentsTitle {
+        margin-bottom: 50px;
+      }
+    }
+    .slick-slide {
+      img {
+        max-height: unset;
+        max-width: 100vw;
+      }
+    }
+    .slick-center {
+      img {
+        max-height: unset;
+        max-width: 100vw;
+      }
+    }
+    &_text {
+      grid-template-columns: 1fr;
+      & + .ContentsTitle {
+        margin-top: 50px;
+      }
+      .col2 {
+        grid-template-columns: 1fr;
+      }
+      .col3 {
+        grid-template-columns: 1fr 1fr;
+        white-space: nowrap;
+        p {
+          grid-column: 1 / 3;
+        }
+      }
+      &_wrapper {
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}

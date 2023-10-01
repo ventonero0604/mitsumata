@@ -1,0 +1,64 @@
+/* ---------------------------------- *\
+   #PAGE
+\* ---------------------------------- */
+@import './variables.scss';
+
+body {
+  font-family: 'Shippori Mincho', serif;
+  position: relative;
+  color: $white;
+  font-size: 1.5rem;
+  background-color: $black;
+}
+
+a {
+  color: $white;
+}
+
+a,
+button {
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pc {
+  display: block;
+}
+.sp {
+  display: none;
+}
+.pc_inline {
+  display: inline-block;
+}
+.sp_inline {
+  display: none;
+}
+.pc_flex {
+  display: flex;
+}
+.sp_flex {
+  display: none;
+}
+
+@include breakPoint(sp) {
+  .pc {
+    display: none;
+  }
+  .sp {
+    display: block;
+  }
+  .pc_inline {
+    display: none;
+  }
+  .sp_inline {
+    display: inline-block;
+  }
+  .pc_flex {
+    display: none;
+  }
+  .sp_flex {
+    display: flex;
+  }
+}

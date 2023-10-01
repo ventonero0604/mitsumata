@@ -1,0 +1,25 @@
+.ContentsTitle {
+  font-size: $text-30;
+  span {
+    font-size: $text-18;
+    display: block;
+    margin-top: 12px;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-small {
+    font-size: $text-20;
+    span {
+      font-size: $text-12;
+      margin-top: 20px;
+    }
+  }
+}
+
+@include breakPoint(tablet) {
+  .ContentsTitle {
+  }
+}

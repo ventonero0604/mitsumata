@@ -1,0 +1,172 @@
+.Menu {
+  background: $black;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 100vw;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  font-size: $text-16;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  &.is-show {
+    left: 0;
+    opacity: 1;
+  }
+
+  &_contents {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    gap: 0 70px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &_list {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 0 70px;
+    margin-left: 200px;
+  }
+
+  &_listItem {
+    & + & {
+      margin-top: 20px;
+    }
+  }
+
+  &_expand {
+    display: flex;
+  }
+
+  &_toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-right: 27px;
+    margin-right: 27px;
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      width: 1px;
+      height: 9px;
+      background-color: $white;
+      right: 0;
+      top: 1rem;
+      transition: all 0.2s;
+    }
+    &:after {
+      transform: rotate(90deg);
+    }
+    &.is-show {
+      &:before {
+        opacity: 0;
+      }
+      &:after {
+        transform: rotate(270deg);
+      }
+      ~ .Menu_innerList {
+        opacity: 1;
+        max-height: 100px;
+      }
+    }
+  }
+
+  &_innerList {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    li + li {
+      margin-top: 16px;
+    }
+    a {
+      font-size: $text-13;
+    }
+  }
+
+  &_follow {
+    display: flex;
+    align-items: center;
+    margin-top: 66px;
+    p {
+      margin-right: 38px;
+    }
+  }
+
+  &_close {
+    display: block;
+    position: absolute;
+    top: 38px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1px;
+      height: 33px;
+      background: $white;
+    }
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+@include breakPoint(menu) {
+  .Menu {
+    &_contents {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      top: 30%;
+    }
+
+    &_list {
+      margin-top: 100px;
+      margin-left: unset;
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Menu {
+    align-items: flex-start;
+    overflow-y: scroll;
+    padding-bottom: 50px;
+    &_list {
+      justify-content: flex-start;
+      flex-direction: column;
+      flex: 1;
+      margin-top: 34px;
+      gap: 24px 0;
+      margin-left: unset;
+    }
+    &_contents {
+      top: 6%;
+    }
+    &_follow {
+      margin-top: 34px;
+    }
+
+    &_close {
+      top: 20px;
+      right: 20px;
+    }
+  }
+}

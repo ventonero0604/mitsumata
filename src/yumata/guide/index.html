@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  {{> meta}}
+  {{> webFont}}
+</head>
+
+<body>
+  {{> header isBlack=true}}
+  <main class="Guide">
+    <!--<div class="Guide_main_wrapper">
+      <div class="Guide_main">
+        <div id="scene1" class="mv1 Guide_bg true" style="background-image: url(/img/mitsumata/main_a.png)"></div>
+        <div id="scene2" class="mv2 Guide_bg" style="background-image: url(/img/mitsumata/main_b.png)"></div>
+        <div id="scene3" class="mv3 Guide_bg" style="background-image: url(/img/mitsumata/main_c.png)"></div>
+        <div id="scene4" class="mv4 Guide_bg" style="background-image: url(/img/mitsumata/main_d.png)"></div>
+        <div id="scene5" class="mv5 Guide_bg" style="background-image: url(/img/mitsumata/main_e.png)"></div>
+      </div>
+
+      <div class="Guide_main_contents">
+        <div class="item" id="item_01">
+          <p>70年の風雪に耐えた山小屋は、<br class="sp">朽ち果てつつ自然に溶け込んでいく</p>
+        </div>
+        <div class="item" id="item_02">
+          <p>塵のない澄んだ空気を<br class="sp">とおりぬけてきた光は強い</p>
+        </div>
+        <div class="item" id="item_03">
+          <p>マジックアワーの空のグラデーション。<br class="sp">あの青は何色というのだろう</p>
+        </div>
+        <div class="item" id="item_04">
+          <p>高山の風に耐えるため、<br class="sp">植物たちは背を低くし強さを手に入れている</p>
+        </div>
+        <div class="item" id="item_05">
+          <p>太陽の光が葉を通り抜け、<br class="sp">光が形を現している</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="Guide_gallery" id="gallery">
+      <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">周辺の景色<span>LANDSCAPE</span></h3>
+      <div class="Carousel">
+        <img src="/img/mitsumata/img_landscape_a.png" alt="">
+        <img src="/img/mitsumata/img_landscape_b.png" alt="">
+        <img src="/img/mitsumata/img_landscape_c.png" alt="">
+        <img src="/img/mitsumata/img_landscape_a.png" alt="">
+        <img src="/img/mitsumata/img_landscape_b.png" alt="">
+        <img src="/img/mitsumata/img_landscape_c.png" alt="">
+      </div>
+      <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">三俣山荘<span>Mitumata sannso Mountain Hut</span>
+      </h3>
+      <div class="Carousel">
+        <img src="/img/mitsumata/img_lodge_a.png" alt="">
+        <img src="/img/mitsumata/img_lodge_b.png" alt="">
+        <img src="/img/mitsumata/img_lodge_c.png" alt="">
+        <img src="/img/mitsumata/img_lodge_a.png" alt="">
+        <img src="/img/mitsumata/img_lodge_b.png" alt="">
+        <img src="/img/mitsumata/img_lodge_c.png" alt="">
+      </div>
+      <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">食事<span>FOOD</span>
+      </h3>
+      <div class="Carousel">
+        <img src="/img/mitsumata/img_food_a.png" alt="">
+        <img src="/img/mitsumata/img_food_b.png" alt="">
+        <img src="/img/mitsumata/img_food_c.png" alt="">
+        <img src="/img/mitsumata/img_food_a.png" alt="">
+        <img src="/img/mitsumata/img_food_b.png" alt="">
+        <img src="/img/mitsumata/img_food_c.png" alt="">
+      </div>
+    </section>
+
+    <div class="Guide_history_wrapper">
+      <div class="Guide_history">
+        <div id="h_scene1" class="history1 Guide_bg" style="background-image: url(/img/mitsumata/main_history_a.png)">
+        </div>
+        <div id="h_scene2" class="history2 Guide_bg" style="background-image: url(/img/mitsumata/main_history_b.png)">
+        </div>
+        <div id="h_scene3" class="history3 Guide_bg" style="background-image: url(/img/mitsumata/main_history_c.png)">
+        </div>
+        <div id="h_scene4" class="history4 Guide_bg" style="background-image: url(/img/mitsumata/main_history_d.png)">
+        </div>
+        <div id="h_scene5" class="history5 Guide_bg" style="background-image: url(/img/mitsumata/main_history_e.png)">
+        </div>
+        <div id="h_scene6" class="history6 Guide_bg" style="background-image: url(/img/mitsumata/main_history_f.png)">
+        </div>
+      </div>
+
+      <div class="Guide_history_contents">
+        <div class="item" id="history_01">
+          <div class="Guide_history_title">
+            <h3 class="title">HISTORY</h3>
+            <p>三俣山荘初代</p>
+            <p class="name">伊藤正一</p>
+          </div>
+        </div>
+        <div class="item" id="history_02">
+          <p class="Guide_history_text">戦後まもなく、現「三俣山荘」の権利を買い取り、黒部源流周辺をくまなく探索した末、<br class="pc" />
+            雲ノ平の不思議な魅力に取りつかれ、広く人々に広めた。</p>
+        </div>
+        <div class="item" id="history_03">
+          <p class="Guide_history_text">戦前、物理学者を目指していたのは有名な話となったが、<br class="pc" />
+            その理性をはるかに上回るロマンティシズムに脳内は覆われていたようで、<br class="pc" />
+            その結果が、名著「黒部の山賊」や、<br class="pc" />
+            今もなお神秘に包まれた黒部源流一帯の雰囲気にもつながっている気がする。</p>
+        </div>
+        <div class="item" id="history_04">
+          <div class="Guide_history_text">
+            <p>「山小屋とは本当に楽しいものだ。末永く続いていってほしいものです。」</p>
+            <p class="mt-20 sp:mt-10">山小屋で出会った人々、起こった出来事を思い出しながらの一言。<br class="pc" />
+              この一言をここに集う皆様で共有していただけたらと思う。」</p>
+          </div>
+        </div>
+        <div class="item" id="history_05">
+          <div class="Guide_history_title">
+            <p>定本</p>
+            <p class="name">黒部の山賊</p>
+          </div>
+        </div>
+        <div class="item" id="history_06">
+          <p class="Guide_history_text">黒部の山賊は、たくさんの手下を従えた前科30犯以上の強盗殺人犯であり、<br class="pc" />
+            黒部渓谷一帯を荒らし回り、登山者や猟師から金品をや獲物を巻き上げ、<br class="pc" />
+            黒部の行方不明者はすべて彼らに殺されたーー当時そんな噂が流れていたが、<br class="pc" />
+            著者は何も知らない登山者のふりをして、<br class="pc" />
+            自身が経営権を買い取った山小屋を訪れ、小屋主になりすました山賊と対峙するのだ。</p>
+        </div>
+      </div>
+    </div>-->
+
+    <section class="Guide_gallery">
+      <!--<div class="Carousel Carousel-caption">
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_a.png" alt="">
+          <p class="Carousel_caption">終戦・三俣蓮華小屋の経営権を買取る</p>
+        </div>
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_b.png" alt="">
+          <p class="Carousel_caption">セスナ機による物資輸送実験 (北アルプス初)</p>
+        </div>
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_c.png" alt="">
+          <p class="Carousel_caption">1963 ヘリコプター物資輸送の開始 (北アルプス初)</p>
+        </div>
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_a.png" alt="">
+          <p class="Carousel_caption">終戦・三俣蓮華小屋の経営権を買取る</p>
+        </div>
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_b.png" alt="">
+          <p class="Carousel_caption">セスナ機による物資輸送実験 (北アルプス初)</p>
+        </div>
+        <div class="Carousel_item">
+          <img src="/img/mitsumata/img_history_c.png" alt="">
+          <p class="Carousel_caption">1963 ヘリコプター物資輸送の開始 (北アルプス初)</p>
+        </div>
+      </div>-->
+      <div class="Wrapper">
+        <img src="/img/yumata/exterior_01.png" alt="" style="margin-bottom: 30px;">
+        <img src="/img/yumata/exterior_02.png" alt="" style="margin-bottom: 30px;">
+        <img src="/img/yumata/img_perth_a.png" alt="" style="margin-bottom: 30px;">
+        <img src="/img/yumata/img_perth_b.png" alt="" style="margin-bottom: 30px;">
+        <img src="/img/yumata/img_perth_c.png" alt="" style="margin-bottom: 30px;">
+        <img src="/img/logo_group_yumata_white.svg" alt="" style="margin-bottom: 30px; margin: 0 auto;">
+        <p style="font-size: 90px; text-align: center;" class="pc">Comming Soon</p>
+        <p style="font-size: 50px; text-align: center;" class="sp">Comming Soon</p>
+        <!--<a href="https://reserva.be/kurobegenryu" class="Button Button_toForm" target="_blank">
+          <img src="/img/ico_calendar.svg" alt="">
+          <span>三俣山荘</span>
+          <span>宿泊予約フォーム</span>
+        </a>-->
+      </div>
+    </section>
+
+    <div class="Guide_container">
+      {{> lodgeInfo}}
+      <div class="Wrapper">
+        <ul class="BreadCrumb">
+          <li><a href="#">TOP</a></li>
+          <li>三俣山荘の魅力</li>
+        </ul>
+      </div>
+      {{> footer}}
+    </div>
+
+    <a href="#" class="PageTop">PAGE TOP</a>
+
+    <a href="/yumata/info/" class="Button Button_circle">
+      <img src="/img/ico_note.svg" alt="">
+      <p>
+        湯俣山荘<br />
+        宿泊情報
+      </p>
+    </a>
+  </main>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

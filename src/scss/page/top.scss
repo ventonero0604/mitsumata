@@ -1,0 +1,349 @@
+.Top {
+  &_main {
+    background-size: cover;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+      z-index: 1;
+      &_lead {
+        font-size: $text-26;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        mix-blend-mode: overlay;
+        letter-spacing: 1rem;
+      }
+      &_sub {
+        margin-block: 30px 60px;
+        opacity: 0.64;
+        mix-blend-mode: overlay;
+      }
+    }
+  }
+
+  &_movie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &_lead {
+    display: flex;
+    position: relative;
+    height: 300vh;
+    &_wrapper {
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: sticky;
+      overflow: hidden;
+    }
+    &_text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &_que {
+      height: 100vh;
+    }
+    p {
+      text-align: center;
+      line-height: 4;
+      z-index: 1;
+      position: sticky;
+      top: 0;
+    }
+    &_scene {
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &_image {
+        top: 0;
+        left: 0;
+        transition: all 0.8s;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        overflow: hidden;
+        &.true {
+          visibility: visible;
+          opacity: 1;
+          transition: all 0.8s;
+          transform: scale(1.1);
+        }
+        &.disappear {
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.8s 0.4s;
+        }
+      }
+    }
+  }
+
+  &_lodge {
+    display: grid;
+    grid-template-columns: minmax(330px, 20%) 1fr;
+    align-content: flex-end;
+    padding-left: 3%;
+    & + & {
+      margin-top: 150px;
+    }
+    &_contents {
+      padding-right: 10%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 90px;
+    }
+    &_image {
+      img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &_text {
+      margin-top: 30px;
+      line-height: 2;
+    }
+    &_links {
+      margin-top: 80px;
+      border-bottom: 1px solid $gray-1;
+      width: 250px;
+
+      li {
+        border-top: 1px solid $gray-1;
+      }
+      a {
+        height: 66px;
+        display: flex;
+        align-items: center;
+        font-size: $text-14;
+        padding-left: 20px;
+        position: relative;
+        &:after {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-top: 4px solid transparent;
+          border-bottom: 4px solid transparent;
+          border-left: 8px solid $gray-1;
+          border-right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 24px;
+        }
+        img {
+          margin-right: 34px;
+          width: 24px;
+        }
+      }
+    }
+  }
+
+  &_itoshindo {
+    background-image: url(/img/bg_itoshindo.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+    overflow: hidden;
+    margin-top: 150px;
+    &_contents {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &_title {
+      display: flex;
+      align-items: baseline;
+      position: relative;
+      gap: 0 pxvw(44, 'pc');
+      &_a {
+        width: pxvw(533, 'pc');
+      }
+      &_b {
+        width: pxvw(1060, 'pc');
+      }
+    }
+    &_text {
+      text-align: center;
+      line-height: 1.8;
+      margin-block: 50px 70px;
+      padding-inline: 20px;
+    }
+    &_badge {
+      position: absolute;
+      right: 0;
+      bottom: -68%;
+      width: pxvw(256, 'pc');
+    }
+  }
+
+  &_info {
+    padding: 80px 0 150px;
+
+    .Wrapper + .Wrapper {
+      margin-top: 130px;
+    }
+  }
+
+  &_instagram {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
+    gap: 14px;
+    margin-top: 90px;
+    li {
+      width: 100%;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 280px;
+      img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &_carousel {
+    padding-block: 70px 150px;
+  }
+
+  &:after {
+    background-image: url(/img/top_bg_info.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    content: '';
+    display: block;
+  }
+}
+
+@include breakPoint(1200) {
+  .Top {
+    &_itoshindo {
+      &_title {
+        flex-direction: column;
+      }
+      &_badge {
+        right: pxvw(90, 'pc');
+        top: pxvw(70, 'pc');
+        bottom: unset;
+      }
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Top {
+    &_lead {
+      padding: 110px px;
+      p {
+        line-height: 2.6;
+        padding-inline: 20px;
+      }
+    }
+
+    &_lodge {
+      grid-template-columns: 1fr;
+      align-content: unset;
+      padding-left: unset;
+      & + & {
+        margin-top: 130px;
+      }
+      &_contents {
+        order: 2;
+        padding-right: unset;
+        padding-top: 65px;
+      }
+      &_image {
+        order: 1;
+      }
+      &_links {
+        width: 90%;
+      }
+    }
+
+    &_itoshindo {
+      padding: 85px 0 100px;
+      margin-top: 120px;
+      &_title {
+        &_a {
+          width: pxvw(168, 'sp');
+        }
+        &_b {
+          width: pxvw(334, 'sp');
+        }
+      }
+      &_text {
+        padding-inline: 20px;
+      }
+
+      &_badge {
+        right: pxvw(0, 'sp');
+        top: pxvw(-60, 'sp');
+        width: pxvw(150, 'sp');
+      }
+    }
+
+    &_instagram {
+      grid-template-columns: repeat(auto-fill, 160px);
+      gap: 9px 13px;
+      margin-top: 45px;
+      a {
+        display: block;
+        height: 160px;
+      }
+    }
+
+    &_carousel {
+      padding-block: 30px 100px;
+    }
+  }
+}
