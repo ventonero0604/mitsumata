@@ -11,10 +11,10 @@
     width: 100%;
     overflow-y: scroll;
     &-news {
-      background-image: url(/img/bg_news.png);
+      background-image: url(../../img/bg_news.png);
     }
     &-feature {
-      background-image: url(/img/bg_feature.png);
+      background-image: url(../../img/bg_feature.png);
     }
   }
 
@@ -73,10 +73,10 @@
       width: 100%;
       overflow-y: scroll;
       &-news {
-        background-image: url(/img/bg_news_sp.png);
+        background-image: url(../../img/bg_news_sp.png);
       }
       &-feature {
-        background-image: url(/img/bg_feature_sp.png);
+        background-image: url(../../img/bg_feature_sp.png);
       }
     }
     &_contents {

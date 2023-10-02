@@ -156,7 +156,7 @@
         &:after {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           width: 0;
           height: 0;
           border-style: solid;
@@ -177,7 +177,7 @@
   }
 
   &_itoshindo {
-    background-image: url(/img/bg_itoshindo.png);
+    background-image: url(../../img/bg_itoshindo.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -194,12 +194,12 @@
       display: flex;
       align-items: baseline;
       position: relative;
-      gap: 0 pxvw(44, 'pc');
+      gap: 0 pxvw(44, "pc");
       &_a {
-        width: pxvw(533, 'pc');
+        width: pxvw(533, "pc");
       }
       &_b {
-        width: pxvw(1060, 'pc');
+        width: pxvw(1060, "pc");
       }
     }
     &_text {
@@ -212,7 +212,7 @@
       position: absolute;
       right: 0;
       bottom: -68%;
-      width: pxvw(256, 'pc');
+      width: pxvw(256, "pc");
     }
   }
 
@@ -251,7 +251,7 @@
   }
 
   &:after {
-    background-image: url(/img/top_bg_info.png);
+    background-image: url(../../img/top_bg_info.png);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -260,7 +260,7 @@
     top: 0;
     left: 0;
     z-index: -10;
-    content: '';
+    content: "";
     display: block;
   }
 }
@@ -272,8 +272,8 @@
         flex-direction: column;
       }
       &_badge {
-        right: pxvw(90, 'pc');
-        top: pxvw(70, 'pc');
+        right: pxvw(90, "pc");
+        top: pxvw(70, "pc");
         bottom: unset;
       }
     }
@@ -315,10 +315,10 @@
       margin-top: 120px;
       &_title {
         &_a {
-          width: pxvw(168, 'sp');
+          width: pxvw(168, "sp");
         }
         &_b {
-          width: pxvw(334, 'sp');
+          width: pxvw(334, "sp");
         }
       }
       &_text {
@@ -326,9 +326,9 @@
       }
 
       &_badge {
-        right: pxvw(0, 'sp');
-        top: pxvw(-60, 'sp');
-        width: pxvw(150, 'sp');
+        right: pxvw(0, "sp");
+        top: pxvw(-60, "sp");
+        width: pxvw(150, "sp");
       }
     }
 

@@ -16,13 +16,13 @@
     background-position: center;
 
     &-mitsumata {
-      background-image: url(/img/bnr_bg_mitsumata.png);
+      background-image: url(../../img/bnr_bg_mitsumata.png);
     }
     &-suisho {
-      background-image: url(/img/bnr_bg_suisho.png);
+      background-image: url(../../img/bnr_bg_suisho.png);
     }
     &-yumata {
-      background-image: url(/img/bnr_bg_yumata.png);
+      background-image: url(../../img/bnr_bg_yumata.png);
     }
   }
 
@@ -50,7 +50,7 @@
     }
     & + & {
       &:before {
-        content: '|';
+        content: "|";
         margin-inline: 50px;
       }
     }

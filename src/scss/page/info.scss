@@ -15,13 +15,13 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     &-mitsumata {
-      background-image: url(/img/mitsumata/bg_info.png);
+      background-image: url(../../img/mitsumata/bg_info.png);
     }
     &-suisho {
-      background-image: url(/img/suisho/bg_info.png);
+      background-image: url(../../img/suisho/bg_info.png);
     }
     &-yumata {
-      background-image: url(/img/yumata/bg_info.png);
+      background-image: url(../../img/yumata/bg_info.png);
     }
   }
 
@@ -38,7 +38,7 @@
       align-items: center;
       margin-top: 80px;
       &:before {
-        content: '';
+        content: "";
         height: 24px;
         border-left: 1px solid $white;
         margin-right: 18px;
@@ -67,10 +67,10 @@
       align-items: center;
       &:after {
         display: block;
-        content: '';
+        content: "";
         width: 26px;
         height: 26px;
-        background-image: url(/img/ico_calendar.svg);
+        background-image: url(../../img/ico_calendar.svg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -187,13 +187,13 @@
   .Info {
     &_wrapper {
       &-mitsumata {
-        background-image: url(/img/mitsumata/bg_info_sp.png);
+        background-image: url(../../img/mitsumata/bg_info_sp.png);
       }
       &-suisho {
-        background-image: url(/img/suisho/bg_info_sp.png);
+        background-image: url(../../img/suisho/bg_info_sp.png);
       }
       &-yumata {
-        background-image: url(/img/yumata/bg_info_sp.png);
+        background-image: url(../../img/yumata/bg_info_sp.png);
       }
     }
     &_contents {

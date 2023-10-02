@@ -1,6 +1,6 @@
 .Company {
   &_mv {
-    background-image: url(/img/bg_company.png);
+    background-image: url(../../img/bg_company.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -48,7 +48,7 @@
   .Company {
     &_list {
       &_item {
-        a[href^='tel:'] {
+        a[href^="tel:"] {
           pointer-events: none;
         }
       }
@@ -59,7 +59,7 @@
 @include breakPoint(sp) {
   .Company {
     &_mv {
-      background-image: url(/img/bg_company_sp.png);
+      background-image: url(../../img/bg_company_sp.png);
     }
     &_lead {
       margin-block: 70px;
