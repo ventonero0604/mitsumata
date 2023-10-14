@@ -1,0 +1,12 @@
+.Tags {
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  &-center {
+    justify-content: center;
+  }
+  a {
+    color: #c4c4c4;
+  }
+}

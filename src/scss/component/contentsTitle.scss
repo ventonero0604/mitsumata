@@ -17,6 +17,9 @@
       margin-top: 20px;
     }
   }
+  &_dark {
+    color: #c4c4c4;
+  }
 }
 
 @include breakPoint(tablet) {

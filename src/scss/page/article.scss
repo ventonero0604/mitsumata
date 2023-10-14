@@ -29,8 +29,25 @@
     z-index: 2;
   }
 
+  &_source {
+    margin-top: 70px;
+    h1 {
+      font-size: $text-30;
+      text-align: center;
+    }
+    &_inner {
+      max-width: 760px;
+      margin-inline: auto;
+      padding-block: 80px;
+      line-height: 2;
+      & > * + * {
+        margin-top: 40px;
+      }
+    }
+  }
+
   &_links {
-    margin-top: 80px;
+    margin-top: 90px;
     padding-block: 60px;
     border-top: 1px solid $gray-2;
     border-bottom: 1px solid $gray-2;
@@ -40,21 +57,6 @@
     }
     div + div {
       margin-top: 20px;
-    }
-  }
-
-  &_source {
-    margin-top: 100px;
-    h1 {
-      font-size: $text-30;
-      text-align: center;
-      margin-bottom: 60px;
-    }
-    &_inner {
-      max-width: 760px;
-      margin-inline: auto;
-      padding-block: 80px;
-      line-height: 2;
     }
   }
 }
@@ -87,7 +89,6 @@
       margin-top: 50px;
       h1 {
         font-size: $text-20;
-        margin-bottom: 40px;
       }
       &_inner {
         padding-block: 40px;

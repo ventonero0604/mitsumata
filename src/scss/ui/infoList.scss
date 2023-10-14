@@ -2,47 +2,36 @@
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+  gap: 100px 0;
 
-  &-arrow {
-    gap: 100px 0;
-  }
-  &-image {
-    gap: 100px 0;
+  &_item {
+    .Tags {
+      margin-top: 40px;
+      margin-left: 190px;
+    }
   }
 
   &_link {
-    display: grid;
-
-    .InfoList-arrow & {
-      position: relative;
-      grid-template-columns: 190px 1fr;
-      padding-right: 120px;
-      &:after {
-        position: absolute;
-        top: 1.5rem;
-        right: 10px;
-        content: '';
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        margin: 0 10px;
-        border-top: 2px solid $white;
-        border-right: 2px solid $white;
-        transform: rotate(45deg);
-      }
-    }
-
-    .InfoList-image & {
-      grid-template-columns: 1fr 265px;
-
-      .contents {
-        display: grid;
-        grid-template-columns: 190px 1fr;
-      }
+    position: relative;
+    display: flex;
+    grid-template-columns: 190px 1fr;
+    padding-right: 120px;
+    &:after {
+      position: absolute;
+      top: 1.5rem;
+      right: 10px;
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      border-top: 2px solid $white;
+      border-right: 2px solid $white;
+      transform: rotate(45deg);
     }
 
     .date {
-      margin-top: 1rem;
+      width: 190px;
     }
 
     .text {
@@ -51,30 +40,15 @@
         font-size: $text-15;
       }
     }
-
-    .image {
-      margin-left: 40px;
-    }
   }
 }
 
 @include breakPoint(tablet) {
   .InfoList {
     &_link {
-      .InfoList-arrow & {
-        grid-template-columns: 1fr;
-        &:after {
-          top: 50%;
-          transform: translateY(-50%) rotate(45deg);
-        }
-      }
-      .InfoList-image & {
-        grid-template-columns: 1fr 265px;
-
-        .contents {
-          display: grid;
-          grid-template-columns: 1fr;
-        }
+      &:after {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
       }
     }
 
@@ -88,28 +62,13 @@
 @include breakPoint(sp) {
   .InfoList {
     margin-top: 50px;
-    &-arrow {
-      gap: 60px 0;
-    }
-    &-image {
-      gap: 60px 0;
-    }
+    gap: 60px 0;
     &_link {
-      .InfoList-arrow & {
-        padding-right: 60px;
-      }
-      .InfoList-image & {
-        grid-template-columns: 1fr;
-      }
+      padding-right: 60px;
     }
+  }
 
-    .image {
-      margin-left: unset;
-      margin-top: 24px;
-    }
-
-    .text {
-      font-size: $text-20;
-    }
+  .text {
+    font-size: $text-20;
   }
 }

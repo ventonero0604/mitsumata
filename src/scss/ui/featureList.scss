@@ -1,0 +1,42 @@
+.FeatureList {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+
+  &_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 40px;
+    width: 100%;
+
+    .text {
+      font-size: $text-25;
+    }
+
+    .image {
+      max-width: 265px;
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .FeatureList {
+    margin-top: 50px;
+    gap: 60px 0;
+
+    &_link {
+      flex-direction: column;
+    }
+
+    .image {
+      max-width: unset;
+      margin-top: 24px;
+    }
+
+    .text {
+      font-size: $text-20;
+    }
+  }
+}
