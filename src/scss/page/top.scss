@@ -45,7 +45,7 @@
   &_lead {
     display: flex;
     position: relative;
-    height: 300vh;
+    height: 200vh;
     &_wrapper {
       height: 100vh;
       width: 100%;
@@ -53,6 +53,10 @@
       left: 0;
       position: sticky;
       overflow: hidden;
+      background-image: url(/img/top_lead_1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
     &_text {
       position: absolute;
@@ -64,50 +68,12 @@
       align-items: center;
       justify-content: center;
     }
-    &_que {
-      height: 100vh;
-    }
     p {
       text-align: center;
       line-height: 4;
       z-index: 1;
       position: sticky;
       top: 0;
-    }
-    &_scene {
-      height: 100vh;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      &_image {
-        top: 0;
-        left: 0;
-        transition: all 0.8s;
-        position: absolute;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        width: 100%;
-        height: 100vh;
-        opacity: 0;
-        overflow: hidden;
-        &.true {
-          visibility: visible;
-          opacity: 1;
-          transition: all 0.8s;
-          transform: scale(1.1);
-        }
-        &.disappear {
-          visibility: hidden;
-          opacity: 0;
-          transition: all 0.8s 0.4s;
-        }
-      }
     }
   }
 
@@ -283,7 +249,9 @@
 @include breakPoint(sp) {
   .Top {
     &_lead {
-      padding: 110px px;
+      &_wrapper {
+        background-image: url(/img/top_lead_1_sp.png);
+      }
       p {
         line-height: 2.6;
         padding-inline: 20px;

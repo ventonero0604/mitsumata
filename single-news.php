@@ -1,23 +1,24 @@
-<?php
-/*
-Template Name: ニュース詳細
-Template Post Type: post
-*/
-?>
-
 <?php get_header(); ?>
 <main class="Article">
   <div class="Article_mv">
     <div class="Wrapper">
-      <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span>NEWS</span></h2>
-      <h3 class="mt-6"><?php the_tags(''); ?></h3>
-      <p class="text-[1.4rem] mt-6"><?php the_time('Y.m.d'); ?></p>
+      <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span class="ContentsTitle_dark">NEWS</span></h2>
 
       <section class="Article_source">
+        <p class="text-[1.4rem] mb-20"><?php the_time('Y.m.d'); ?></p>
         <h1><?php the_title(); ?></h1>
-        <img src="<?php the_field('news_main_image'); ?>" alt="">
         <div class="Article_source_inner">
           <?php the_content(); ?>
+          <ul class="Tags Tags-center">
+            <?php
+            $post_tags = get_the_tags(); // 記事のタグを取得
+            if ($post_tags) {
+              foreach ($post_tags as $tag) {
+                echo '<li><a href="' . get_tag_link($tag) . '">' . '#' . $tag->name . '</a></li>';
+              }
+            }
+            ?>
+          </ul>
           <div class="Article_links">
             <div>
               <?php
@@ -31,9 +32,7 @@ Template Post Type: post
               if (!empty($next_post)) : ?>
                 <a href="<?php echo get_permalink($next_post); ?>">次の記事を読む　></a>
               <?php endif; ?>
-            </div>
-            <div>
-              <a href="<?php echo get_home_url() ?>/news">&lt　お知らせ一覧に戻る</a>
+              <a href="<?php echo get_home_url() ?>/news" class="w-full">&lt　お知らせ一覧に戻る</a>
             </div>
           </div>
         </div>

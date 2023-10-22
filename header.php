@@ -142,11 +142,7 @@
               <p>
                 Follow us
               </p>
-              <div class="Sns">
-                <a href="https://www.instagram.com/mitsumatasanso/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_instagram.svg" alt="Instagram"></a>
-                <a href="https://twitter.com/NeoAlps" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_x.svg" alt="X"></a>
-                <a href="https://www.youtube.com/@NEOALPS" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_youtube.svg" alt="Youtube"></a>
-              </div>
+              <?php get_template_part('/components/sns'); ?>
             </li>
           </ul>
         </div>

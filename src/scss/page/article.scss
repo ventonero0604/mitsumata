@@ -54,9 +54,8 @@
     div {
       display: flex;
       justify-content: space-between;
-    }
-    div + div {
-      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 20px 0;
     }
   }
 }

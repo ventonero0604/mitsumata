@@ -15,7 +15,8 @@
       height: 47px;
       padding-inline: 20px 40px;
     }
-    &:after {
+
+    button {
       display: block;
       content: "";
       background-image: url(../../img/ico_search.svg);

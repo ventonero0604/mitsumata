@@ -44,46 +44,26 @@
     display: flex;
   }
 
-  &_toggle {
+  &_title {
     position: relative;
     display: flex;
     justify-content: center;
     padding-right: 27px;
     margin-right: 27px;
-    &:before,
     &:after {
-      content: '';
+      content: "";
       display: inline-block;
       position: absolute;
-      width: 1px;
-      height: 9px;
+      width: 9px;
+      height: 1px;
       background-color: $white;
       right: 0;
-      top: 1rem;
+      top: 1.2rem;
       transition: all 0.2s;
-    }
-    &:after {
-      transform: rotate(90deg);
-    }
-    &.is-show {
-      &:before {
-        opacity: 0;
-      }
-      &:after {
-        transform: rotate(270deg);
-      }
-      ~ .Menu_innerList {
-        opacity: 1;
-        max-height: 100px;
-      }
     }
   }
 
   &_innerList {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: all 0.2s ease-in-out;
     li + li {
       margin-top: 16px;
     }
@@ -110,7 +90,7 @@
     height: 30px;
     &:before,
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       left: 50%;

@@ -23,7 +23,7 @@
           </a>
         </h3>
         <p class="Footer_small">Follow us</p>
-        {{> sns}}
+        <?php get_template_part('/components/sns'); ?>
       </div>
       <div>
         <ul class="Footer_list">
