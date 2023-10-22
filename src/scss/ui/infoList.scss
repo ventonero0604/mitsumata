@@ -37,9 +37,6 @@
     .text {
       font-size: $text-25;
       flex: 1;
-      span {
-        font-size: $text-15;
-      }
     }
   }
 }
@@ -66,6 +63,16 @@
     gap: 60px 0;
     &_link {
       padding-right: 60px;
+      flex-direction: column;
+      .text {
+        font-size: $text-20;
+      }
+    }
+    &_item {
+      .Tags {
+        margin-top: 30px;
+        margin-left: 0;
+      }
     }
   }
 

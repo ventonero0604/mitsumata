@@ -1,3 +1,9 @@
 <ul class="Filter">
-  <li class="Filter_search"><input type="text" placeholder="検索する" /></li>
+  <li class="Filter_search">
+    <form method="get" id="searchform" action="http://mistumata.local/news">
+      <input type="text" name="s" id="s" placeholder="検索する">
+      <input type="hidden" name="post_type" value="news">
+      <button type="submit"></button>
+    </form>
+  </li>
 </ul>

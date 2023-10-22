@@ -24,15 +24,15 @@
               <?php
               $prev_post = get_adjacent_post(false, '', false);
               if (!empty($prev_post)) : ?>
-                <a href="<?php echo get_permalink($prev_post); ?>">&lt　前の記事に戻る</a>
+                <a class="prev" href="<?php echo get_permalink($prev_post); ?>">前の記事に戻る</a>
               <?php endif; ?>
 
               <?php
               $next_post = get_adjacent_post(false, '', true);
               if (!empty($next_post)) : ?>
-                <a href="<?php echo get_permalink($next_post); ?>">次の記事を読む　></a>
+                <a class="next" href="<?php echo get_permalink($next_post); ?>">次の記事を読む</a>
               <?php endif; ?>
-              <a href="<?php echo get_home_url() ?>/news" class="w-full">&lt　お知らせ一覧に戻る</a>
+              <a class="list" href="<?php echo get_home_url() ?>/news" class="w-full">お知らせ一覧に戻る</a>
             </div>
           </div>
         </div>

@@ -57,6 +57,40 @@
       flex-wrap: wrap;
       gap: 20px 0;
     }
+    a {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .next {
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 5px solid #ffffff;
+        border-right: 0;
+        margin-left: 14px;
+      }
+    }
+    .prev,
+    .list {
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-right: 5px solid #ffffff;
+        border-left: 0;
+        margin-right: 14px;
+      }
+    }
   }
 }
 

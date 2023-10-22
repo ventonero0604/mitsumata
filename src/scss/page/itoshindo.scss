@@ -2,6 +2,9 @@
   h3 {
     text-align: center;
   }
+  hr {
+    border-color: $gray-1;
+  }
   .flex {
     display: flex;
   }
@@ -28,9 +31,6 @@
     margin: 0 auto;
     padding-top: 30px;
     line-height: 2;
-  }
-  a {
-    text-decoration: underline;
   }
   .responsive {
     width: 90%;
