@@ -11,14 +11,12 @@
   <main class="Top">
     {{> spinner}}
     <section class="Top_main">
-      <div class="Top_main_text">
-        <h2 class="Top_main_text_lead">北アルプス黒部源流</h2>
-        <h3 class="Top_main_text_sub">Northern Alps Kurobe Genryu</h3>
-        <div class="ScrollDown"></div>
-      </div>
-      <div class="Top_movie">
-        <video id="video" playsinline muted autoplay loop>
+      <div id="player" class="Top_movie">
+        <video class="pc" playsinline muted autoplay loop>
           <source src="/img/main.mp4" type="video/mp4">
+        </video>
+        <video class="sp" playsinline muted autoplay loop>
+          <source src="/img/main_sp.mp4" type="video/mp4">
         </video>
       </div>
     </section>
@@ -41,10 +39,6 @@
       <section class="Top_lodge" id="top_lodge">
         <div class="Top_lodge_contents">
           <img src="/img/logo_group_mitsumata.svg" alt="三俣山荘" class="w-30">
-          <!-- <p class="Top_lodge_text">
-            黒部源流を仰ぎ幾多の歴史を刻み続ける<br />
-            「山賊」とともに生きた山小屋
-          </p> -->
           <ul class="Top_lodge_links">
             <li>
               <a href="/mitsumata/info/">
@@ -71,10 +65,6 @@
       <section class="Top_lodge">
         <div class="Top_lodge_contents">
           <img src="/img/logo_group_suisho.svg" alt="三俣山荘" class="w-30">
-          <!-- <p class="Top_lodge_text">
-            風の難所に立つ自然の存在を近くに感じる<br />
-            北アルプスで最も小さい山小屋のひとつ
-          </p> -->
           <ul class="Top_lodge_links">
             <li>
               <a href="/suisho/info/">
@@ -101,10 +91,6 @@
       <section class="Top_lodge">
         <div class="Top_lodge_contents">
           <img src="/img/logo_group_yumata.svg" alt="湯俣山荘" class="w-30">
-          <!-- <p class="Top_lodge_text">
-            40年ぶりに再開! 伊藤新道の入口に位置する<br />
-            新しいアウトドアアクティビティの拠点
-          </p> -->
           <ul class="Top_lodge_links">
             <li>
               <a href="/yumata/info/">

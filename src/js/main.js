@@ -526,7 +526,6 @@ if ($("main").hasClass("Info")) {
 $(function () {
   $(window).on("load", function () {
     $(".Spinner").delay(500).fadeOut(1000);
-    $(".Spinner_wrapper").delay(800).fadeOut(2000);
-    $(".Spinner_wrapper").delay(50000).hide();
+    $(".Spinner_wrapper").delay(800).fadeOut(1000);
   });
 });
