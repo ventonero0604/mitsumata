@@ -1,6 +1,6 @@
 .Company {
   &_mv {
-    background-image: url(../../img/bg_company.png);
+    background-image: url(../../img/bg_company.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@
 @include breakPoint(sp) {
   .Company {
     &_mv {
-      background-image: url(../../img/bg_company_sp.png);
+      background-image: url(../../img/bg_company_sp.jpg);
     }
     &_lead {
       margin-block: 70px;

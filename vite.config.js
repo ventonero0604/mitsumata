@@ -7,94 +7,94 @@ import handlebars from "vite-plugin-handlebars";
 
 //HTML上で出し分けたい各ページごとの情報
 const pageData = {
-  "index.html": {
+  "/index.html": {
     title: "北アルプス黒部源流-北アルプス最奥の秘境-",
     description:
       "北アルプス黒部源流にある三俣山荘、水晶小屋、湯俣山荘を管理する公式ホームページです。雄大な自然に囲まれた北アルプス最奥の秘境の情報を掲載しています。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_top.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_top.jpg",
     isTop: true,
   },
-  "mitsumata/guide/index.html": {
+  "/mitsumata/guide/index.html": {
     title: "三俣山荘の魅力 │ 北アルプス黒部源流",
     description:
       "北アルプス裏銀座、鷲羽岳と三俣蓮華岳の鞍部に位置する山荘。その歴史は戦後まもなく三俣蓮華小屋の権利を買い取ったところから始まります。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_mitsumata_guide.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_mitsumata_guide.jpg",
   },
-  "mitsumata/info/index.html": {
+  "/mitsumata/index.html": {
     title: "三俣山荘宿泊情報 │ 北アルプス黒部源流",
     description:
       "三俣山荘の開設時期は7月7日(金)〜10月15日(日)まで。定員は65名。宿泊予約はWEB予約フォームからお願いいたします。展望食堂から槍ヶ岳を眺めながら名物のジビエシチューをいただけます。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_mitsumata_info.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_mitsumata_info.jpg",
   },
-  "suisho/guide/index.html": {
+  "/suisho/guide/index.html": {
     title: "水晶小屋の魅力 │ 北アルプス黒部源流",
     description:
       "水晶小屋は風速50メートルの風と岩肌に囲まれた厳しい土地にあります。小屋の運営にはバイオエネルギーを使用し雨水で飲料水を賄う自然と共存する山小屋です。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_suisho_guide.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_suisho_guide.jpg",
   },
-  "suisho/info/index.html": {
+  "/suisho/index.html": {
     title: "水晶小屋宿泊情報 │ 北アルプス黒部源流",
     description:
       "水晶小屋の開設時期は7月10日(月)〜9月30日(土)まで。定員は35名。宿泊予約はWEB予約フォームからお願いいたします。飲料水は雨水を利用したものを量り売りで販売しております。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_suisho_info.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_suisho_info.jpg",
   },
-  "yumata/guide/index.html": {
+  "/yumata/guide/index.html": {
     title: "湯俣山荘の魅力 │ 北アルプス黒部源流",
     description:
       "湯俣山荘は伊藤新道の廃道とともに閉業となりましたがこの度伊藤新道の復活に併せて湯俣山荘もリニューアルし再開しました。湯俣山荘は北アルプスのゲートウェイとして、アウトドアアクティビティへの入り口としても多くのポテンシャルを持っています。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_yumata_guide.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_yumata_guide.jpg",
   },
-  "yumata/info/index.html": {
+  "/yumata/index.html": {
     title: "湯俣山荘宿泊情報 │ 北アルプス黒部源流",
     description:
       "湯俣山荘の開設時期は9月15日(金)〜11月11日(土)まで。定員は28名。宿泊予約は8月15日からの受付を開始しております。伊藤新道の入り口として40年ぶりに再開します。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_yumata_info.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_yumata_info.jpg",
   },
   "/news/index.html": {
     title: "お知らせ │ 北アルプス黒部源流",
     description:
       "各山荘からのお知らせ。山小屋情報、イベント、サイトの更新情報を掲載しています。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_news.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_news.jpg",
   },
   "/news/detail.html": {
     title: "お知らせタイトル │ 北アルプス黒部源流",
     description:
       "各山荘からのお知らせ。山小屋情報、イベント、サイトの更新情報を掲載しています。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_news.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_news.jpg",
   },
   "/feature/index.html": {
     title: "特集 │ 北アルプス黒部源流",
     description: "北アルプス黒部源流の山小屋にまつわる特集を掲載します。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_feature.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_feature.jpg",
   },
   "/feature/detail.html": {
     title: "特集タイトル │ 北アルプス黒部源流",
     description: "北アルプス黒部源流の山小屋にまつわる特集を掲載します。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_feature.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_feature.jpg",
   },
   "/contact/index.html": {
     title: "お問い合わせ │ 北アルプス黒部源流",
     description:
       "各山荘へのお問い合わせはこちらからお願いいたします。フォームでのお問い合わせにつきましては返信にお時間を頂きます事、予めご了承ください。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_contact.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_contact.jpg",
   },
   "/contact/confirm.html": {
     title: "お問い合わせ 内容確認│ 北アルプス黒部源流",
     description:
       "各山荘へのお問い合わせはこちらからお願いいたします。フォームでのお問い合わせにつきましては返信にお時間を頂きます事、予めご了承ください。",
-    ogp: "https://mitsumatasanso.com/img/ogp/oogp_contact.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/oogp_contact.jpg",
   },
   "/company/index.html": {
     title: "三俣山荘株式会社 │ 北アルプス黒部源流",
     description:
       "三俣山荘株式会社は北アルプス黒部源流に位置する三俣山荘、水晶小屋、湯俣山荘の管理・運営を行っています。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_company.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_company.jpg",
   },
   "/itoshindo/index.html": {
     title: "復活 伊藤新道 │ 北アルプス黒部源流",
     description:
       "伊藤新道は時代のなかで⼀時は地図から消えた道ですが、「伊藤新道復活プロジェクト」として、クラウドファンディングにて支援を募り、吊り橋やタラップの設置を行いました。そして、2023年8月20日(日)に再び伊藤新道が開通します！伊藤新道に訪れる方はご一読ください。",
-    ogp: "https://mitsumatasanso.com/img/ogp/ogp_itoshindo.png",
+    ogp: "https://mitsumatasanso.com/img/ogp/ogp_itoshindo.jpg",
   },
 };
 
@@ -125,13 +125,13 @@ export default defineConfig({
         entryFileNames: "assets/js/[name].js",
       },
       input: {
-        index: resolve(root, "index.html"),
-        mitsumata_guide: resolve(root, "mitsumata/guide/index.html"),
-        mitsumata_info: resolve(root, "mitsumata/info/index.html"),
-        suisho_guide: resolve(root, "suisho/guide/index.html"),
-        suisho_info: resolve(root, "suisho/info/index.html"),
-        yumata_guide: resolve(root, "yumata/guide/index.html"),
-        yumata_info: resolve(root, "yumata/info/index.html"),
+        index: resolve(root, "/index.html"),
+        mitsumata_guide: resolve(root, "/mitsumata/guide/index.html"),
+        mitsumata_info: resolve(root, "/mitsumata/index.html"),
+        suisho_guide: resolve(root, "/suisho/guide/index.html"),
+        suisho_info: resolve(root, "/suisho/index.html"),
+        yumata_guide: resolve(root, "/yumata/guide/index.html"),
+        yumata_info: resolve(root, "/yumata/index.html"),
         news: resolve(root, "/news/index.html"),
         news_detail: resolve(root, "/news/detail.html"),
         feature: resolve(root, "/feature/index.html"),

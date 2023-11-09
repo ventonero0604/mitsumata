@@ -9,105 +9,203 @@
 <body>
   {{> header isBlack=true}}
   <main class="Guide">
-    <div class="Guide_main_wrapper">
-      <div class="Guide_main">
-        <div id="scene1" class="Guide_bg true">
-          <img class="pc" src="/img/yumata/main_a.png" alt="">
-          <img class="sp" src="/img/yumata/main_a_sp.png" alt="">
-        </div>
-        <div id="scene2" class="Guide_bg">
-          <img class="pc" src="/img/yumata/main_b.png" alt="">
-          <img class="sp" src="/img/yumata/main_b_sp.png" alt="">
-        </div>
-        <div id="scene3" class="Guide_bg">
-          <img class="pc" src="/img/yumata/main_c.png" alt="">
-          <img class="sp" src="/img/yumata/main_c_sp.png" alt="">
-        </div>
-        <div id="scene4" class="Guide_bg">
-          <img class="pc" src="/img/yumata/main_d.png" alt="">
-          <img class="sp" src="/img/yumata/main_d_sp.png" alt="">
-        </div>
-        <div id="scene5" class="Guide_bg">
-          <img class="pc" src="/img/yumata/main_e.png" alt="">
-          <img class="sp" src="/img/yumata/main_e_sp.png" alt="">
-        </div>
-        <div id="scene6" class="Guide_bg">
-          <img class="pc" src="/img/yumata/main_f.png" alt="">
-          <img class="sp" src="/img/yumata/main_f_sp.png" alt="">
-        </div>
+    <section class="Top_main">
+      <div id="player" class="Top_movie">
+        <video id="video" class="pc" playsinline muted autoplay loop>
+          <source src="/img/yumata/yumata.mp4" type="video/mp4">
+        </video>
+        <video id="video" class="sp" playsinline muted autoplay loop>
+          <source src="/img/yumata/yumata_sp.mp4" type="video/mp4">
+        </video>
       </div>
-
-      <div class="Guide_main_contents">
-        <div class="item" id="item_01">
-          <p><!--塵のない澄んだ空気を<br class="sp">とおりぬけてきた光は強い--></p>
-        </div>
-        <div class="item" id="item_02">
-          <p><!--雲が風に飲み込まれて形を変えていく。<br class="sp">風が姿を現す瞬間だ--></p>
-        </div>
-        <div class="item" id="item_03">
-          <p><!--マジックアワーの空のグラデーション。<br class="sp">あの青は何色というのだろう--></p>
-        </div>
-        <div class="item" id="item_04">
-          <p><!--太陽の光が葉を通り抜け、<br class="sp">光が形を現していく--></p>
-        </div>
-        <div class="item" id="item_05">
-          <p><!--高山の風は強く、<br class="sp">植物たちは背を低くし強さを手に入れている--></p>
-        </div>
-        <div class="item" id="item_06">
-          <p><!--70年の風雪に耐えた山小屋は、<br class="sp">朽ち果てつつ自然に溶け込んでいく--></p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <section class="Guide_gallery" id="gallery">
       <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">周辺の景色<span>LANDSCAPE</span></h3>
       <div class="Carousel">
-        <img src="/img/yumata/img_landscape_a.png" alt="">
-        <img src="/img/yumata/img_landscape_b.png" alt="">
-        <img src="/img/yumata/img_landscape_c.png" alt="">
-        <img src="/img/yumata/img_landscape_d.png" alt="">
-        <img src="/img/yumata/img_landscape_e.png" alt="">
-        <img src="/img/yumata/img_landscape_f.png" alt="">
-        <img src="/img/yumata/img_landscape_g.png" alt="">
-        <img src="/img/yumata/img_landscape_h.png" alt="">
-        <img src="/img/yumata/img_landscape_i.png" alt="">
-        <img src="/img/yumata/img_landscape_j.png" alt="">
+        <img src="/img/yumata/img_landscape_a.jpg" alt="">
+        <img src="/img/yumata/img_landscape_b.jpg" alt="">
+        <img src="/img/yumata/img_landscape_c.jpg" alt="">
+        <img src="/img/yumata/img_landscape_d.jpg" alt="">
+        <img src="/img/yumata/img_landscape_e.jpg" alt="">
+        <img src="/img/yumata/img_landscape_f.jpg" alt="">
+        <img src="/img/yumata/img_landscape_g.jpg" alt="">
+        <img src="/img/yumata/img_landscape_h.jpg" alt="">
+        <img src="/img/yumata/img_landscape_i.jpg" alt="">
+        <img src="/img/yumata/img_landscape_j.jpg" alt="">
+        <img src="/img/yumata/img_landscape_k.jpg" alt="">
       </div>
       <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">湯俣山荘<span>Yumata sanso Mountain Hut</span>
       </h3>
       <div class="Carousel">
-        <img src="/img/yumata/img_lodge_a.png" alt="">
-        <img src="/img/yumata/img_lodge_b.png" alt="">
-        <img src="/img/yumata/img_lodge_c.png" alt="">
-        <img src="/img/yumata/img_lodge_d.png" alt="">
-        <img src="/img/yumata/img_lodge_e.png" alt="">
-        <img src="/img/yumata/img_lodge_f.png" alt="">
-        <img src="/img/yumata/img_lodge_g.png" alt="">
-        <img src="/img/yumata/img_lodge_h.png" alt="">
-        <img src="/img/yumata/img_lodge_i.png" alt="">
-        <img src="/img/yumata/img_lodge_j.png" alt="">
-        <img src="/img/yumata/img_lodge_k.png" alt="">
-        <img src="/img/yumata/img_lodge_l.png" alt="">
-        <img src="/img/yumata/img_lodge_m.png" alt="">
-        <img src="/img/yumata/img_lodge_n.png" alt="">
+        <div>
+          <img src="/img/yumata/img_lodge_a.jpg" alt="">
+          <div class="description">
+            <p class="title">受付</p>
+            <p class="text">
+              伊藤新道の状況、通行に関する情報は、すべてこの受付に集約されている。いざというときのために通交届の提出も忘れずに。<br>また一風変わったお土産も並ぶ。物色してみよう。
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_b.jpg" alt="">
+          <div class="description">
+            <p class="title">食堂</p>
+            <p class="text">
+              次世代の山小屋を目指した意匠は、バーカウンターを中心にして瀟洒なゲストハウスのような趣きだ
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_c.jpg" alt="">
+          <div class="description">
+            <p class="title">バーカウンター</p>
+            <p class="text">
+              タモの一枚板を使用し、同じ木材で @一二の用品店、高橋氏とハイスツールを制作した。過去の面影を残す壁面に誂えた酒棚にはスタッフ激推しのウイスキー、クラフトジン等が並ぶ
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_d.jpg" alt="">
+          <div class="description">
+            <p class="title">手ぬぐい</p>
+            <p class="text">
+              噴湯丘の連鎖と、湯俣ブルー、硫黄やマンガンの作り出す自然界の極彩色をデザインに落とし込みました。水晶小屋のイワベンケイ手拭い同様、伊藤圭デザイン
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_e.jpg" alt="">
+          <div class="description">
+            <p class="title">湯俣オリジナル温泉バッグ</p>
+            <p class="text">
+              主にBC用のバックパックや、気の利いたハイキング小物を作り出すChant!Eqipementの佐藤氏とコラボした、シルナイロン製の温泉バック。上部が巾着になっていて上質なプロダクト。
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_f.jpg" alt="">
+          <div class="description">
+            <p class="title">バッジ</p>
+            <p class="text">
+              ジェリー鵜飼氏デザイン
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_g.jpg" alt="">
+          <div class="description">
+            <p class="title">旧棟客室</p>
+            <p class="text">
+              次世代の山小屋を目指し、28床全てプライベート性を重視したドミトリーとなっている
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_h.jpg" alt="">
+          <!--<div class="description">
+            <p class="title">個室内</p>
+            <p class="text">
+              それぞれの個室内には照明とコンセントが完備。2段目の天井には斧で削られた古き梁が目前にあり豪快だ
+            </p>
+          </div>-->
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_i.jpg" alt="">
+          <div class="description">
+            <p class="title">景観</p>
+            <p class="text">
+              比較的大きな窓からは湯俣川、硫黄尾根の一部が覗く。時々刻々と変化する湯俣川の色を楽しみながらくつろぐ事ができる
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_j.jpg" alt="">
+          <div class="description">
+            <p class="title">新棟客室</p>
+            <p class="text">
+              こちらも旧棟客室と同じくドミトリーだが、新築だけあって静かで、よりモダンな内装となっている。湯俣ブルーを意識した北欧風内装だ
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_k.jpg" alt="">
+          <div class="description">
+            <p class="title">個室内</p>
+            <p class="text">
+              それぞれの個室内には照明とコンセントが完備。旧棟ドミトリー2段目の天井には斧で削られた古き梁が目前にあり豪快だ
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_lodge_l.jpg" alt="">
+          <div class="description">
+            <p class="title">シャワー</p>
+            <p class="text">
+              伊藤新道で七転八倒してドロドロになっても大丈夫！シャワーが2室完備されている
+            </p>
+          </div>
+        </div>
+        <!--<div>
+          <img src="/img/yumata/img_lodge_m.jpg" alt="">
+          <div class="description">
+            <p class="title">太陽光パネル</p>
+            <p class="text">
+              太陽光パネルの説明を頂きたいです。
+            </p>
+          </div>
+        </div>-->
+        <div>
+          <img src="/img/yumata/img_lodge_n.jpg" alt="">
+          <div class="description">
+            <p class="title">ウッドデッキ</p>
+            <p class="text">
+              快適に自炊出来るスペースを目指して設計されたウッドデッキ。夕方にお酒を片手にくつろぐのも贅沢な時間だ
+            </p>
+          </div>
+        </div>
       </div>
-      <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">食事<span>FOOD</span>
-      </h3>
+
+      <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">食事<span>FOOD</span></h3>
       <div class="Carousel">
-        <img src="/img/yumata/img_food_a.png" alt="">
-        <img src="/img/yumata/img_food_b.png" alt="">
-        <img src="/img/yumata/img_food_c.png" alt="">
-        <img src="/img/yumata/img_food_d.png" alt="">
+        <div>
+          <img src="/img/yumata/img_food_b.jpg" alt="">
+          <div class="description">
+            <p class="title">お粥定食 (モーニング)</p>
+            <!--<p class="text">
+                 お粥、焼魚、ゆで卵、汁物、お漬物他
+               </p>-->
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_food_a.jpg" alt="">
+          <div class="description">
+            <p class="title">チリコンカルネプレート (ランチ)</p>
+            <!--<p class="text">
+                 チリコンカルネプレートの説明を頂きたいです。
+               </p>-->
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_food_c.jpg" alt="">
+          <div class="description">
+            <p class="title">ラムステーキのグリドルパンセット (ディナー)</p>
+            <!--<p class="text">
+                 低温調理ラム肉のステーキ　オリジナルソース添え、グリル野菜、白米、スープ他
+               </p>-->
+          </div>
+        </div>
+        <div>
+          <img src="/img/yumata/img_food_d.jpg" alt="">
+          <div class="description">
+            <p class="title">ラムステーキのグリドルパンセット (ディナー)</p>
+            <!--<p class="text">
+                 ラムステーキの説明を頂きたいです。
+               </p>-->
+          </div>
+        </div>
       </div>
     </section>
-
-    <video id="video" class="relative z-10 w-full pc" playsinline muted autoplay loop>
-      <source src="/img/yumata/yumata.mp4" type="video/mp4" style="width: 100%;text-align: center;">
-    </video>
-
-    <video id="video" class="relative z-10 w-full sp" playsinline muted autoplay loop>
-      <source src="/img/yumata/yumata_sp.mp4" type="video/mp4" style="width: 100%;text-align: center;">
-    </video>
 
     <div class="Guide_container">
       {{> lodgeInfo}}
@@ -122,7 +220,7 @@
 
     <a href="#" class="PageTop">PAGE TOP</a>
 
-    <a href="/yumata/info/" class="Button Button_circle">
+    <a href="/yumata/" class="Button Button_circle">
       <img src="/img/ico_note.svg" alt="">
       <p>
         湯俣山荘<br />

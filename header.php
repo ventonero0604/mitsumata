@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="北アルプス黒部源流">
   <meta property="og:description" content="">
   <meta property="og:url" content="https://kumonodaira.net/">
-  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ogp/ogp.png">
+  <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ogp/ogp.jpg">
   <meta property="og:type" content="article">
   <link rel="icon" href="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
           <p class="Header_navi_list_toggle">三俣山荘</p>
           <ul class="Header_navi_dropdown">
             <li class="Header_navi_dropdown_item">
-              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/mitsumata/info/">宿泊情報</a>
+              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/mitsumata/">宿泊情報</a>
             </li>
             <li class="Header_navi_dropdown_item">
               <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/mitsumata/guide/">三俣山荘の魅力</a>
@@ -50,7 +50,7 @@
           <p class="Header_navi_list_toggle">水晶小屋</p>
           <ul class="Header_navi_dropdown">
             <li class="Header_navi_dropdown_item">
-              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/suisho/info/">宿泊情報</a>
+              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/suisho/">宿泊情報</a>
             </li>
             <li class="Header_navi_dropdown_item">
               <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/suisho/guide/">水晶小屋の魅力</a>
@@ -61,7 +61,7 @@
           <p class="Header_navi_list_toggle">湯俣山荘</p>
           <ul class="Header_navi_dropdown">
             <li class="Header_navi_dropdown_item">
-              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/yumata/info/">宿泊情報</a>
+              <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/yumata/">宿泊情報</a>
             </li>
             <li class="Header_navi_dropdown_item">
               <a class="Header_navi_dropdown_link" href="<?php echo get_home_url() ?>/yumata/guide/">湯俣山荘の魅力</a>
@@ -95,21 +95,21 @@
             <li class="Menu_listItem Menu_expand">
               <button class="Menu_toggle Menu_text" type="button">三俣山荘</button>
               <ul class="Menu_innerList">
-                <li><a href="<?php echo get_home_url() ?>/mitsumata/info/">宿泊情報</a></li>
+                <li><a href="<?php echo get_home_url() ?>/mitsumata/">宿泊情報</a></li>
                 <li><a href="<?php echo get_home_url() ?>/mitsumata/guide/">三俣山荘の魅力</a></li>
               </ul>
             </li>
             <li class="Menu_listItem Menu_expand">
               <button class="Menu_toggle Menu_text" type="button">水晶小屋</button>
               <ul class="Menu_innerList">
-                <li><a href="<?php echo get_home_url() ?>/suisho/info/">宿泊情報</a></li>
+                <li><a href="<?php echo get_home_url() ?>/suisho/">宿泊情報</a></li>
                 <li><a href="<?php echo get_home_url() ?>/suisho/guide/">水晶小屋の魅力</a></li>
               </ul>
             </li>
             <li class="Menu_listItem Menu_expand">
               <button class="Menu_toggle Menu_text" type="button">湯俣山荘</button>
               <ul class="Menu_innerList">
-                <li><a href="<?php echo get_home_url() ?>/yumata/info/">宿泊情報</a></li>
+                <li><a href="<?php echo get_home_url() ?>/yumata/">宿泊情報</a></li>
                 <li><a href="<?php echo get_home_url() ?>/yumata/guide/">湯俣山荘の魅力</a></li>
               </ul>
             </li>

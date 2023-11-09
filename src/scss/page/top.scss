@@ -32,7 +32,7 @@
       left: 0;
       position: sticky;
       overflow: hidden;
-      background-image: url(/img/top_lead_1.png);
+      background-image: url(/img/top_lead_1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -118,7 +118,7 @@
   }
 
   &_itoshindo {
-    background-image: url(../../img/bg_itoshindo.png);
+    background-image: url(../../img/bg_itoshindo.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -192,7 +192,7 @@
   }
 
   &:after {
-    background-image: url(../../img/top_bg_info.png);
+    background-image: url(../../img/top_bg_info.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -225,7 +225,7 @@
   .Top {
     &_lead {
       &_wrapper {
-        background-image: url(/img/top_lead_1_sp.png);
+        background-image: url(/img/top_lead_1_sp.jpg);
       }
       p {
         line-height: 2.6;

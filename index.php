@@ -31,11 +31,11 @@
   </section>
 
   <div class="Top_lead_scene">
-    <div class="Top_lead_scene_image true" id="top_lead_scene_1" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_1.png)">
+    <div class="Top_lead_scene_image true" id="top_lead_scene_1" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_1.jpg)">
     </div>
-    <div class="Top_lead_scene_image" id="top_lead_scene_2" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_2.png)">
+    <div class="Top_lead_scene_image" id="top_lead_scene_2" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_2.jpg)">
     </div>
-    <div class="Top_lead_scene_image" id="top_lead_scene_3" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_3.png)">
+    <div class="Top_lead_scene_image" id="top_lead_scene_3" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_3.jpg)">
     </div>
   </div>
 
@@ -49,7 +49,7 @@
           </p> -->
         <ul class="Top_lodge_links">
           <li>
-            <a href="/mitsumata/info/">
+            <a href="/mitsumata/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
@@ -64,8 +64,8 @@
       </div>
       <div class="Top_lodge_image">
         <picture>
-          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_mitsumata.png">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_mitsumata_sp.png" alt="">
+          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_mitsumata.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_mitsumata_sp.jpg" alt="">
         </picture>
       </div>
     </section>
@@ -79,7 +79,7 @@
           </p> -->
         <ul class="Top_lodge_links">
           <li>
-            <a href="/suisho/info/">
+            <a href="/suisho/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
@@ -94,8 +94,8 @@
       </div>
       <div class="Top_lodge_image">
         <picture>
-          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_suisho.png">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_suisho_sp.png" alt="">
+          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_suisho.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_suisho_sp.jpg" alt="">
         </picture>
       </div>
     </section>
@@ -109,7 +109,7 @@
           </p> -->
         <ul class="Top_lodge_links">
           <li>
-            <a href="/yumata/info/">
+            <a href="/yumata/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
@@ -124,8 +124,8 @@
       </div>
       <div class="Top_lodge_image">
         <picture>
-          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_yumata.png">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_yumata_sp.png" alt="">
+          <source media="(min-width: 768px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_yumata.jpg">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lodge_yumata_sp.jpg" alt="">
         </picture>
       </div>
     </section>
@@ -169,28 +169,28 @@
     <section class="Top_carousel">
       <ul class="Carousel">
         <li>
-          <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.png" alt=""></a>
+          <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/tent/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_b.png" alt=""></a>
+          <a href="https://kumonodaira.net/tent/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_b.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/project/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_c.png" alt=""></a>
+          <a href="https://kumonodaira.net/project/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_c.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.png" alt=""></a>
+          <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.png" alt=""></a>
+          <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/tent/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_b.png" alt=""></a>
+          <a href="https://kumonodaira.net/tent/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_b.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/project/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_c.png" alt=""></a>
+          <a href="https://kumonodaira.net/project/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_c.jpg" alt=""></a>
         </li>
         <li>
-          <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.png" alt=""></a>
+          <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.jpg" alt=""></a>
         </li>
       </ul>
     </section>
