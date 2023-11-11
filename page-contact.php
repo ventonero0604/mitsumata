@@ -80,7 +80,7 @@ Template Post Type: page
     <div class="Contact_container">
       <div class="Wrapper">
         <ul class="BreadCrumb">
-          <li><a href="#">TOP</a></li>
+          <li><a href="/">TOP</a></li>
           <li><a href="#">お問い合わせ</a></li>
         </ul>
       </div>
