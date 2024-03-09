@@ -1,14 +1,13 @@
 <?php get_header(); ?>
 <main class="Top">
+  <?php get_template_part('/components/spinner'); ?>
   <section class="Top_main">
-    <div class="Top_main_text">
-      <h2 class="Top_main_text_lead">北アルプス黒部源流</h2>
-      <h3 class="Top_main_text_sub">Northern Alps Kurobe Genryu</h3>
-      <div class="ScrollDown"></div>
-    </div>
-    <div class="Top_movie">
-      <video id="video" playsinline muted autoplay loop>
+    <div id="player" class="Top_movie">
+      <video class="pc" playsinline muted autoplay loop>
         <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/main.mp4" type="video/mp4">
+      </video>
+      <video class="sp" playsinline muted autoplay loop>
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/main_sp.mp4" type="video/mp4">
       </video>
     </div>
   </section>
@@ -16,46 +15,30 @@
   <section class="Top_lead" id="lead">
     <div class="Top_lead_wrapper">
       <p class="Top_lead_text">
-        北アルプス最奥地にして、2500m以上の標高にありながらゆったりとした山容に<br class="pc" />
+        北アルプス最奥地にして、2500m以上の標高にありながら、ゆったりとした山容に、<br class="pc" />
         原始と変わらぬ生態系の奥行きが息づいている黒部源流。<br />
         1945年に先代伊藤正一が初めて足を踏み入れた当時、<br class="pc" />
-        職猟師と物の怪だけが手中に収めていたその<br class="sp">世界はやがて、<br />
-        その美しさを広く知られるようになり、<br />
-        一般登山者からハイカー、エコロジストからアスリートまでもをその大きな懐に抱え、<br />
+        職猟師と物の怪だけが手中に収めていた<br class="sp">その世界はやがて、<br />
+        広く美しさを知られるようになり、<br />
+        一般登山者からハイカー、エコロジストからアスリートまでをもその大きな懐に抱え、<br />
         いつの日か帰る場所を教えるように、凛と存在している
       </p>
-      <div class="Top_lead_que" id="top_lead_que1"></div>
-      <div class="Top_lead_que" id="top_lead_que2"></div>
-      <div class="Top_lead_que" id="top_lead_que3"></div>
     </div>
   </section>
-
-  <div class="Top_lead_scene">
-    <div class="Top_lead_scene_image true" id="top_lead_scene_1" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_1.jpg)">
-    </div>
-    <div class="Top_lead_scene_image" id="top_lead_scene_2" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_2.jpg)">
-    </div>
-    <div class="Top_lead_scene_image" id="top_lead_scene_3" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_lead_3.jpg)">
-    </div>
-  </div>
 
   <div class="Wrapper-black">
     <section class="Top_lodge" id="top_lodge">
       <div class="Top_lodge_contents">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_mitsumata.svg" alt="三俣山荘">
-        <!-- <p class="Top_lodge_text">
-            黒部源流を仰ぎ幾多の歴史を刻み続ける<br />
-            「山賊」とともに生きた山小屋
-          </p> -->
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_mitsumata.svg" alt="三俣山荘" class="w-30">
         <ul class="Top_lodge_links">
           <li>
-            <a href="/mitsumata/">
+            <a href="<?php echo get_home_url() ?>/mitsumata/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
           </li>
           <li>
-            <a href="/mitsumata/guide/">
+            <a href="<?php echo get_home_url() ?>/mitsumata/guide/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_sign.svg" alt="">
               <p>三俣山荘の魅力</p>
             </a>
@@ -72,20 +55,16 @@
 
     <section class="Top_lodge">
       <div class="Top_lodge_contents">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_suisho.svg" alt="三俣山荘">
-        <!-- <p class="Top_lodge_text">
-            風の難所に立つ自然の存在を近くに感じる<br />
-            北アルプスで最も小さい山小屋のひとつ
-          </p> -->
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_suisho.svg" alt="三俣山荘" class="w-30">
         <ul class="Top_lodge_links">
           <li>
-            <a href="/suisho/">
+            <a href="<?php echo get_home_url() ?>/suisho/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
           </li>
           <li>
-            <a href="/suisho/guide/">
+            <a href="<?php echo get_home_url() ?>/suisho/guide/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_sign.svg" alt="">
               <p>水晶小屋の魅力</p>
             </a>
@@ -102,20 +81,16 @@
 
     <section class="Top_lodge">
       <div class="Top_lodge_contents">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_yumata.svg" alt="湯俣山荘">
-        <!-- <p class="Top_lodge_text">
-            40年ぶりに再開! 伊藤新道の入口に位置する<br />
-            新しいアウトドアアクティビティの拠点
-          </p> -->
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/logo_group_yumata.svg" alt="湯俣山荘" class="w-30">
         <ul class="Top_lodge_links">
           <li>
-            <a href="/yumata/">
+            <a href="<?php echo get_home_url() ?>/yumata/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_note.svg" alt="">
               <p>宿泊情報</p>
             </a>
           </li>
           <li>
-            <a href="/yumata/guide/">
+            <a href="<?php echo get_home_url() ?>/yumata/guide/">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_sign.svg" alt="">
               <p>湯俣山荘の魅力</p>
             </a>
@@ -141,7 +116,7 @@
           あまりに険しき環境ゆえに再整備は難しいとされてきた伊藤新道が2023年秋いよいよ復活！<br />
           北アルプスのラストフロンティアを遊び尽くせ。
         </p>
-        <a href="/itoshindo/" class="Button Button_square">VIEW ALL</a>
+        <a href="<?php echo get_home_url() ?>/itoshindo/" class="Button Button_square">VIEW ALL</a>
       </div>
     </section>
   </div>
@@ -149,8 +124,46 @@
   <section class="Top_info">
     <div class="Wrapper">
       <h3 class="ContentsTitle">お知らせ<span>NEWS</span></h3>
-      {{> news}}
-      <a href="/news/" class="Button Button_square mt-18 mx-auto">VIEW ALL</a>
+      <ul class="InfoList">
+        <?php
+        $posts_per_page = 3; // 1ページに表示する記事数
+        $args = array(
+          'post_type' => 'news',
+          'posts_per_page' => $posts_per_page,
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+          while ($query->have_posts()) {
+            $query->the_post();
+        ?>
+            <li class="InfoList_item">
+              <a href="<?php the_permalink(); ?>" class="InfoList_link">
+                <p class="date"><?php the_time('Y.m.d'); ?></p>
+                <div class="text">
+                  <p><?php the_title(); ?></p>
+                </div>
+              </a>
+              <ul class="Tags">
+                <?php
+                $post_tags = get_the_tags();
+                if ($post_tags) {
+                  foreach ($post_tags as $tag) {
+                    $tag_link = get_tag_link($tag->term_id);
+                    echo '<li><a href="' . esc_url($tag_link) . '">' . '#' . esc_html($tag->name) . '</a></li>';
+                  }
+                }
+                ?>
+              </ul>
+            </li>
+        <?php
+          }
+        }
+        wp_reset_postdata();
+        ?>
+      </ul>
+      <a href="<?php echo get_home_url() ?>/news/" class="Button Button_square mt-18 mx-auto">VIEW ALL</a>
     </div>
     <div class="Wrapper">
       <h3 class="ContentsTitle ContentsTitle-center">インスタグラム<span>INSTAGRAM</span></h3>
@@ -160,13 +173,44 @@
     </div>
     <div class="Wrapper">
       <h3 class="ContentsTitle">特集<span>FEATURE</span></h3>
-      {{> feature}}
-      <a href="/feature/" class="Button Button_square mt-18 mx-auto">VIEW ALL</a>
+      <ul class="FeatureList">
+        <?php
+        $posts_per_page = 3; // 1ページに表示する記事数
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $args = array(
+          'post_type' => 'feature',
+          'posts_per_page' => $posts_per_page,
+          'paged' => $paged,
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+          while ($query->have_posts()) {
+            $query->the_post();
+        ?>
+            <li class="FeatureList_item">
+              <a href="<?php the_permalink(); ?>" class="FeatureList_link">
+                <div class="text">
+                  <p><?php the_title(); ?></p>
+                </div>
+                <figure class="image">
+                  <?php the_post_thumbnail(); ?>
+                </figure>
+              </a>
+            </li>
+        <?php
+          }
+        }
+        wp_reset_postdata();
+        ?>
+      </ul>
+      <a href="<?php echo get_home_url() ?>/feature/" class="Button Button_square mt-18 mx-auto">VIEW ALL</a>
     </div>
   </section>
 
   <div class="Wrapper-black">
-    <section class="Top_carousel">
+    <!-- <section class="Top_carousel">
       <ul class="Carousel">
         <li>
           <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.jpg" alt=""></a>
@@ -193,7 +237,7 @@
           <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.jpg" alt=""></a>
         </li>
       </ul>
-    </section>
+    </section> -->
 
     <?php get_footer(); ?>
   </div>

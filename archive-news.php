@@ -5,7 +5,11 @@
       <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span class="ContentsTitle_dark">NEWS</span></h2>
       <ul class="Filter">
         <li class="Filter_search">
-          <?php get_search_form(); ?>
+          <form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>/">
+            <input type="text" name="s" id="s" placeholder="検索する">
+            <input type="hidden" name="post_type" value="news">
+            <button type="submit"></button>
+          </form>
         </li>
       </ul>
       <div class="Article_contents">
@@ -37,7 +41,8 @@
                   $post_tags = get_the_tags();
                   if ($post_tags) {
                     foreach ($post_tags as $tag) {
-                      echo '<li><a href="' . get_tag_link($tag) . '">' . '#' . $tag->name . '</a></li>';
+                      $tag_link = get_tag_link($tag->term_id);
+                      echo '<li><a href="' . esc_url($tag_link) . '">' . '#' . esc_html($tag->name) . '</a></li>';
                     }
                   }
                   ?>

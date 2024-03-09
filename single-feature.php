@@ -2,11 +2,15 @@
 <main class="Article">
   <div class="Article_mv">
     <div class="Wrapper">
-      <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span class="ContentsTitle_dark">NEWS</span></h2>
+      <h2 class="ContentsTitle ContentsTitle-small">特集<span class="ContentsTitle_dark">FEATURE</span></h2>
 
       <section class="Article_source">
-        <p class="text-[1.4rem] mb-20"><?php the_time('Y.m.d'); ?></p>
         <h1><?php the_title(); ?></h1>
+        <?php if (has_post_thumbnail()) : ?>
+          <figure class="Article_mainImage">
+            <?php the_post_thumbnail(); ?>
+          </figure>
+        <?php endif; ?>
         <div class="Article_source_inner">
           <?php the_content(); ?>
           <ul class="Tags Tags-center">
@@ -28,7 +32,7 @@
               <?php endif; ?>
               <?php
               if (empty($prev_post)) : ?>
-                <a class="list" href="<?php echo get_home_url() ?>/news" class="w-full">お知らせ一覧に戻る</a>
+                <a class="list" href="<?php echo get_home_url() ?>/feature" class="w-full">特集一覧に戻る</a>
               <?php endif; ?>
 
               <?php
@@ -39,7 +43,7 @@
             </div>
             <?php
             if (!empty($prev_post)) : ?>
-              <a class="list" href="<?php echo get_home_url() ?>/news" class="w-full">お知らせ一覧に戻る</a>
+              <a class="list" href="<?php echo get_home_url() ?>/feature" class="w-full">特集一覧に戻る</a>
             <?php endif; ?>
 
           </div>
@@ -49,7 +53,7 @@
       <?php
       $related_posts = new WP_Query(array(
         'posts_per_page' => 3,
-        'post_type'      => 'news',
+        'post_type'      => 'feature',
         'post__not_in'   => array($post->ID),
         'orderby'        => 'date',
       ));
@@ -62,7 +66,6 @@
             <?php while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
               <li class="InfoList_item">
                 <a href="<?php the_permalink(); ?>" class="InfoList_link">
-                  <p class="date"><?php the_time('Y.m.d'); ?></p>
                   <div class="text">
                     <p><?php the_title(); ?></p>
                   </div>
@@ -90,7 +93,7 @@
       <div class="Wrapper">
         <ul class="BreadCrumb">
           <li><a href="<?php echo get_home_url() ?>">TOP</a></li>
-          <li><a href="<?php echo get_home_url() ?>/news/">お知らせ</a></li>
+          <li><a href="<?php echo get_home_url() ?>/feature/">特集</a></li>
           <li><?php the_title(); ?></li>
         </ul>
       </div>

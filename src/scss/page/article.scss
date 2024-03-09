@@ -29,6 +29,14 @@
     z-index: 2;
   }
 
+  &_mainImage {
+    width: 100%;
+    margin-top: 60px;
+    img {
+      width: 100%;
+    }
+  }
+
   &_source {
     margin-top: 70px;
     h1 {
@@ -117,6 +125,9 @@
     &_contents {
       margin-top: 50px;
       padding-bottom: 100px;
+    }
+    &_mainImage {
+      margin-top: 40px;
     }
     &_source {
       margin-top: 50px;

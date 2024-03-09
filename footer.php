@@ -29,45 +29,59 @@
         <ul class="Footer_list">
           <li class="Footer_listItem">
             <p>三俣山荘 大町事務室</p>
-            <p>〒893-0002 長野県大町市大町2557</p>
+            <p>〒398-0002 長野県大町市大町2557</p>
           </li>
           <li class="Footer_listItem">
             <p>ネット予約</p>
-            <a href="https://reserva.be/kurobegenryu" class="normal" target="_blank">予約WEBフォーム</a>
+            <!-- <a href="https://reserva.be/kurobegenryu2024" class="normal" target="_blank">予約WEBフォーム</a> -->
+            <p>2024年4月ごろ開始予定</p>
           </li>
           <li class="Footer_listItem">
             <p>電話予約:三俣山荘</p>
-            <p><a href="tel:050-8882-5833">050-8882-5833</a>　(7:00-16:00)</p>
+            <!-- <p><a href="tel:050-8882-5833">050-8882-5833</a>　(7:00-16:00)</p> -->
+            <p>2024年7月にお知らせ予定</p>
           </li>
           <li class="Footer_listItem">
             <p>電話予約:水晶小屋</p>
-            <p><a href="tel:070-1183-7080">070-1183-7080</a>　(7:00-16:00)</p>
+            <!-- <p><a href="tel:070-1183-7080">070-1183-7080</a>　(7:00-16:00)</p> -->
+            <p>2024年7月にお知らせ予定</p>
           </li>
           <li class="Footer_listItem">
             <p>電話予約:湯俣山荘</p>
-            <p><a href="tel:070-4811-7994">070-4811-7994</a>　(8:00-18:00)</p>
+            <!-- <p><a href="tel:070-4811-7994">070-4811-7994</a>　(8:00-18:00)</p> -->
+            <p>2024年4月にお知らせ予定</p>
           </li>
           <li class="Footer_listItem">
             <p>予約に関する相談と団体予約</p>
-            <a href="mailto:yoyaku@kumonodaira.net">yoyaku@kumonodaira.net</a>
+            <div class="flex flex-wrap">
+                <p>
+                  <span>E-mail：</span>
+                  <a href="mailto:yoyaku@mitsumatasanso.com">yoyaku@mitsumatasanso.com</a>
+                </p>
+                <p class="">
+                  <span><b> ｜ </b>電話： </span>
+                  <a href="tel:0263‐83‐5735">0263‐83‐5735</a>　(月‐木曜日 9:00-16:00)
+                </p>
+              </div>
           </li>
           <li class="Footer_listItem">
             <p>その他お問い合わせ</p>
             <div class="flex flex-wrap">
               <p>
                 <span>E-mail：</span>
-                <a href="mailto:info@kumonodaira.net">info@kumonodaira.net</a>
+                <a href="mailto:info@mitsumatasanso.com">info@mitsumatasanso.com</a>
               </p>
               <p class="">
-                <span><b>　｜　</b>電話： </span>
-                <a href="tel:050-8882-5833">050-8882-5833</a>　(7:00-16:00)
+                <span><b> ｜ </b>電話： </span>
+                <a href="tel:050‐8882‐5833">050‐8882‐5833</a><!--　(7:00-16:00)-->
               </p>
             </div>
           </li>
           <li class="Footer_listItem">
             <p>緊急連絡先</p>
             <p>
-              <a href="tel:090-4672-8108">090-4672-8108</a>　 <br class="sp">(三俣山荘現地衛星電話)※山小屋営業期間のみ
+              <!-- <a href="tel:070-4811-7994">070-4811-7994</a>　 <br class="sp">(三俣山荘現地衛星電話)(湯俣山荘)※山小屋営業期間のみ -->
+              現在利用いただけません。
             </p>
           </li>
         </ul>

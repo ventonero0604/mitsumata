@@ -1,26 +1,26 @@
 <?php get_header(); ?>
 <main class="Article">
-  <div class="Article_mv Article_mv-news">
+  <div class="Article_mv Article_mv-feature">
     <div class="Wrapper">
-      <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span class="ContentsTitle_dark">NEWS</span></h2>
+      <h2 class="ContentsTitle ContentsTitle-small">特集<span class="ContentsTitle_dark">FEATURE</span></h2>
       <ul class="Filter">
         <li class="Filter_search">
           <form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>/">
             <input type="text" name="s" id="s" placeholder="検索する">
-            <input type="hidden" name="post_type" value="news">
+            <input type="hidden" name="post_type" value="feature">
             <button type="submit"></button>
           </form>
         </li>
       </ul>
       <div class="Article_contents">
-        <ul class="InfoList">
+        <ul class="FeatureList">
           <?php
-          $posts_per_page = -1; // 1ページに表示する記事数
+          $posts_per_page = 5; // 1ページに表示する記事数
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
           $args = array(
-            'post_type' => 'news',
+            'post_type' => 'feature',
             'posts_per_page' => $posts_per_page,
-            'tag' => get_query_var('tag'), // タグ名を自動取得
+            'paged' => $paged,
           );
 
           $query = new WP_Query($args);
@@ -29,24 +29,15 @@
             while ($query->have_posts()) {
               $query->the_post();
           ?>
-              <li class="InfoList_item">
-                <a href="<?php the_permalink(); ?>" class="InfoList_link">
-                  <p class="date"><?php the_time('Y.m.d'); ?></p>
+              <li class="FeatureList_item">
+                <a href="<?php the_permalink(); ?>" class="FeatureList_link">
                   <div class="text">
                     <p><?php the_title(); ?></p>
                   </div>
+                  <figure class="image">
+                    <?php the_post_thumbnail(); ?>
+                  </figure>
                 </a>
-                <ul class="Tags">
-                  <?php
-                  $post_tags = get_the_tags();
-                  if ($post_tags) {
-                    foreach ($post_tags as $tag) {
-                      $tag_link = get_tag_link($tag->term_id);
-                      echo '<li><a href="' . esc_url($tag_link) . '">' . '#' . esc_html($tag->name) . '</a></li>';
-                    }
-                  }
-                  ?>
-                </ul>
               </li>
           <?php
             }
@@ -72,7 +63,7 @@
       <div class="Wrapper">
         <ul class="BreadCrumb">
           <li><a href="<?php echo get_home_url() ?>">TOP</a></li>
-          <li>お知らせ</li>
+          <li>特集</li>
         </ul>
       </div>
       <?php get_footer(); ?>
