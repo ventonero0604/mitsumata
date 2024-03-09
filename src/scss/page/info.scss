@@ -152,6 +152,12 @@
       font-size: $text-20;
     }
 
+    small {
+      a {
+        font-size: inherit;
+      }
+    }
+
     & + & {
       margin-top: 20px;
     }
@@ -172,6 +178,11 @@
     small {
       font-size: $text-13;
     }
+  }
+
+  &_back {
+    text-align: right;
+    margin-top: 150px;
   }
 }
 

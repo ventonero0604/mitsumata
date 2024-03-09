@@ -56,7 +56,7 @@ Template Post Type: page
               予約専用番号 <a href="tel:050-8882-5833">050-8882-5833</a>　<small>受付時間: 水・土　9:00-18:00</small>
             </p>
           </div>
-          　<div class="Info_text">
+          <div class="Info_text">
             <p>個人予約</p>
             <p>
               4/1（月）10:00より予約専用サイトにて受付開始予定
@@ -162,11 +162,11 @@ Template Post Type: page
             <p>グループ割</p>
             <p>3,000円引き(同一山行で三俣・水晶・湯俣に宿泊)</p>
           </div>
-          　<div class="Info_text">
+          <div class="Info_text">
             <p>雲ノ平割</p>
             <p>500円引き(同一山行で雲ノ平山荘に宿泊)</p>
           </div>
-          　<div class="Info_text">
+          <div class="Info_text">
             <p>Neo Alps会員</p>
             <p>5％引き</p>
           </div>
@@ -176,26 +176,25 @@ Template Post Type: page
               子ども～22歳まで年齢に応じて割引
             </p>
           </div>
-          　<div class="Info_text">
+          <div class="Info_text">
             <p>日本勤労者山岳連盟</p>
             <p>
               500円引き
             </p>
           </div>
-          　<small>宿泊当日、窓口にて証明書をご提示いただきますと、割引が適用されます。</small>
+          <small>宿泊当日、窓口にて証明書をご提示いただきますと、割引が適用されます。</small>
         </div>
 
         <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small" id="calendar">
           カレンダー<span>CALENDAR</span></h3>
         <div class="Info_text_wrapper Info_text_wrapper-nb">
           <div class="Carousel">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/suisho/img_calendar_2023_7.svg" alt="">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/suisho/img_calendar_2023_8.svg" alt="">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/suisho/img_calendar_2023_9.svg" alt="">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/suisho/img_calendar_2023_10.svg" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_07_2024.svg" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_08_2024.svg" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_09_2024.svg" alt="">
           </div>
+          <p class="Info_back"><a href="#roomprice">宿泊料金に戻る</a></p>
         </div>
-        <p><a href="#roomprice">宿泊料金に戻る</a></p>
       </section>
 
       <div class="Info_container">

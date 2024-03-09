@@ -20,13 +20,13 @@ Template Post Type: page
 
         <section>
           <div class="mb-10">
-			
+
             <a href="https://camp-fire.jp/projects/view/681118?list=watched" target="_blank">
               <img class="block" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/itoshindo/bnr_itoshindo.jpg" alt="避難小屋建造">
             </a>
-			  <h3>クラウドファンディング終了のお知らせ</h3>
-			<p>この度のクラウドファンディング「復活! 伊藤新道～避難小屋建造プロジェクト」は2023年9月3日(日)から2023年11月19日(日)の期間中460名の皆様のご支援を賜り7,911,500円の資金を集めることができました。ご協力いただき誠にありがとうございました。</p>
-			<hr style="margin: 80px 0 80px;">
+            <h3>クラウドファンディング終了のお知らせ</h3>
+            <p>この度のクラウドファンディング「復活! 伊藤新道～避難小屋建造プロジェクト」は2023年9月3日(日)から2023年11月19日(日)の期間中460名の皆様のご支援を賜り7,911,500円の資金を集めることができました。ご協力いただき誠にありがとうございました。</p>
+            <hr style="margin: 80px 0 80px;">
           </div>
 
           <h3>お問い合わせ</h3>

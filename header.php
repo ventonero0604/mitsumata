@@ -70,12 +70,12 @@
         <li class="Header_navi_list_item">
           <a href="<?php echo get_home_url() ?>/itoshindo/" class="Header_navi_listLink">伊藤新道</a>
         </li>
-         <li class="Header_navi_list_item">
+        <li class="Header_navi_list_item">
           <a href="https://reserva.be/kurobegenryu2024" class="Header_navi_reserve" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_calendar.svg" alt="宿泊予約フォーム">
             宿泊予約フォーム
           </a>
-        </li> 
+        </li>
         <li class="Header_navi_list_item">
           <button type="button" class="Header_menu"><span></span></button>
         </li>
@@ -117,7 +117,7 @@
             </li>
           </ul>
           <ul>
-           <li class="Menu_listItem">
+            <li class="Menu_listItem">
               <a class="Menu_text" href="<?php echo get_home_url() ?>/feature/">特集</a>
             </li>
             <li class="Menu_listItem">

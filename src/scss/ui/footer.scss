@@ -25,6 +25,7 @@
     span {
       display: block;
       margin-top: 20px;
+      white-space: nowrap;
     }
   }
 
@@ -63,6 +64,10 @@
     text-align: center;
     display: block;
     margin-top: 120px;
+  }
+
+  .Sns {
+    width: 100%;
   }
 }
 
@@ -116,7 +121,7 @@
 
 @include breakPoint(upper) {
   .Footer {
-    a[href^='tel:'] {
+    a[href^="tel:"] {
       pointer-events: none;
     }
   }
