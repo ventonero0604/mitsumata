@@ -226,7 +226,7 @@ Template Post Type: page
         <div class="Info_text_wrapper Info_text_wrapper-nb">
           <div class="Carousel">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_07_2024.svg" alt="">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_08_2024.svg" alt="">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/mitsumata/img_calendar_2023_7.svg" alt="">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_09_2024.svg" alt="">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/reservation_10_2024.svg" alt="">
           </div>

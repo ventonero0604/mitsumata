@@ -33,6 +33,8 @@
     font-size: $text-16;
     margin-block: 10px 14px;
     align-self: flex-start;
+    width: 100%;
+    text-align: center;
   }
 
   &_list {
@@ -68,6 +70,7 @@
 
   .Sns {
     width: 100%;
+    justify-content: center;
   }
 }
 
