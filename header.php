@@ -124,6 +124,9 @@
               <a class="Menu_text" href="<?php echo get_home_url() ?>/news/">お知らせ</a>
             </li>
             <li class="Menu_listItem">
+              <a class="Menu_text" href="<?php echo get_home_url() ?>/blog/">ブログ</a>
+            </li>
+            <li class="Menu_listItem">
               <a class="Menu_text" href="<?php echo get_home_url() ?>/company/">三俣⼭荘事務所</a>
             </li>
             <li class="Menu_listItem">

@@ -2,7 +2,7 @@
 <main class="Article">
   <div class="Article_mv Article_mv-news">
     <div class="Wrapper">
-      <h2 class="ContentsTitle ContentsTitle-small">お知らせ<span class="ContentsTitle_dark">NEWS</span></h2>
+      <h2 class="ContentsTitle ContentsTitle-small">ニュース<span class="ContentsTitle_dark">NEWS</span></h2>
       <ul class="Filter">
         <li class="Filter_search">
           <form method="get" id="searchform" action="<?php echo esc_url(home_url()); ?>/">
@@ -18,7 +18,7 @@
           $posts_per_page = -1; // 1ページに表示する記事数
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
           $args = array(
-            'post_type' => 'news',
+            'post_type' => array('news'),
             'posts_per_page' => $posts_per_page,
             'tag' => get_query_var('tag'), // タグ名を自動取得
           );
@@ -72,7 +72,7 @@
       <div class="Wrapper">
         <ul class="BreadCrumb">
           <li><a href="<?php echo get_home_url() ?>">TOP</a></li>
-          <li>お知らせ</li>
+          <li>タグ</li>
         </ul>
       </div>
       <?php get_footer(); ?>

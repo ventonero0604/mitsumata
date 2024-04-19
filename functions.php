@@ -33,6 +33,12 @@ function load_custom_search_template($template)
           return $new_template;
         }
         break;
+      case 'blog':
+        $new_template = locate_template(array('search-blog.php'));
+        if ('' != $new_template) {
+          return $new_template;
+        }
+        break;
       default:
         // 他の検索テンプレートが必要な場合、ここに追加
         break;
@@ -41,7 +47,40 @@ function load_custom_search_template($template)
   return $template;
 }
 
+function load_custom_tag_template($template)
+{
+  if (is_tag() && !is_admin()) {
+    $post_type = $_GET['post_type'] ?? ''; // PHP 7.0+ の null 合体演算子を使用
+
+    switch ($post_type) {
+      case 'blog':
+        $new_template = locate_template(array('tag-blog.php'));
+        if ('' != $new_template) {
+          return $new_template;
+        }
+        break;
+        // 他のポストタイプに基づくテンプレートが必要な場合、ここに追加
+      default:
+        // デフォルトのテンプレート（news用）を使用
+        break;
+    }
+  }
+  return $template;
+}
+add_filter('template_include', 'load_custom_tag_template');
+
 add_filter('template_include', 'load_custom_search_template');
+
+function customize_tag_query_for_cpt($query)
+{
+  if (!is_admin() && $query->is_main_query() && is_tag()) {
+    $post_type = $_GET['post_type'] ?? null;
+    if ($post_type) {
+      $query->set('post_type', $post_type);
+    }
+  }
+}
+add_action('pre_get_posts', 'customize_tag_query_for_cpt');
 
 function include_custom_post_search($query)
 {

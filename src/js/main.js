@@ -7,6 +7,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+// フローティングバナー閉じる
+$(".js-banner-close").on("click", function () {
+  $(this).parent().fadeOut("fast");
+});
+
 // ハンバーガーメニュー開く
 $(".Header_menu").on("click", function () {
   $(".Menu").addClass("is-show");

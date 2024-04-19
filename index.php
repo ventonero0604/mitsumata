@@ -10,6 +10,17 @@
         <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/main_sp.mp4" type="video/mp4">
       </video>
     </div>
+    <div class="Top_floating_banner">
+      <a href="#" class="banner">
+        <p class="title">お知らせ</p>
+        <div class="texts">
+          <p class="date">2024.03.01</p>
+          <p class="text">
+            2024年度 三俣グループ山小屋スタッフ募集
+          </p>
+        </div>
+      </a>
+    </div>
   </section>
 
   <section class="Top_lead" id="lead">
@@ -210,7 +221,7 @@
   </section>
 
   <div class="Wrapper-black">
-    <!-- <section class="Top_carousel">
+    <section class="Top_carousel">
       <ul class="Carousel">
         <li>
           <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.jpg" alt=""></a>
@@ -224,20 +235,8 @@
         <li>
           <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.jpg" alt=""></a>
         </li>
-        <li>
-          <a href="https://kumonodaira.net/ito_shindo/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_a.jpg" alt=""></a>
-        </li>
-        <li>
-          <a href="https://kumonodaira.net/tent/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_b.jpg" alt=""></a>
-        </li>
-        <li>
-          <a href="https://kumonodaira.net/project/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_c.jpg" alt=""></a>
-        </li>
-        <li>
-          <a href="https://kumonodaira.net/bus/index.html" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_banner_d.jpg" alt=""></a>
-        </li>
       </ul>
-    </section> -->
+    </section>
 
     <?php get_footer(); ?>
   </div>

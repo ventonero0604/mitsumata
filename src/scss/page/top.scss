@@ -7,6 +7,29 @@
     position: relative;
   }
 
+  &_floating_banner {
+    position: absolute;
+    bottom: 46px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 20px 50px;
+    .title {
+      margin-bottom: 14px;
+    }
+    .texts {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .title {
+      font-size: 1.4rem;
+    }
+    .date {
+      font-size: 1.2rem;
+    }
+  }
+
   &_movie {
     position: absolute;
     top: 0;
@@ -53,6 +76,22 @@
       z-index: 1;
       position: sticky;
       top: 0;
+    }
+  }
+
+  &_banner {
+    background-color: black;
+    padding-inline: 20px;
+    &_link {
+      display: block;
+      & + & {
+        margin-top: 20px;
+      }
+    }
+    .container {
+      margin-inline: auto;
+      padding-block: 70px 150px;
+      max-width: 1160px;
     }
   }
 
