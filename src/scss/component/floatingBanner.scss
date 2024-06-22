@@ -3,6 +3,7 @@
   bottom: 40px;
   right: 20px;
   color: white;
+  z-index: 9999;
   &.-yumata {
     background-color: black;
   }
@@ -17,6 +18,9 @@
     .heading {
       font-size: 1.8rem;
       margin-bottom: 8px;
+    }
+    .texts {
+      max-width: 300px;
     }
     .date {
       font-size: 1.4rem;

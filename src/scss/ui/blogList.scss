@@ -1,0 +1,92 @@
+.BlogList {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px 0;
+
+  .contents {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_item {
+    .Tags {
+      margin-top: 40px;
+      a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &_link {
+    position: relative;
+    display: flex;
+    grid-template-columns: 190px 1fr;
+    padding-right: 120px;
+    .date {
+      width: 190px;
+    }
+
+    .text {
+      font-size: $text-25;
+      flex: 1;
+    }
+  }
+
+  .image {
+    width: 265px;
+    height: 165px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@include breakPoint(tablet) {
+  .BlogList {
+    &_link {
+    }
+
+    .date {
+      margin-top: unset;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .BlogList {
+    margin-top: 50px;
+    gap: 60px 0;
+    .contents {
+      display: flex;
+      justify-content: unset;
+      flex-direction: column;
+    }
+    .image {
+      width: 100%;
+      margin-top: 24px;
+      order: 1;
+    }
+    &_link {
+      padding-right: 60px;
+      flex-direction: column;
+      .text {
+        font-size: $text-20;
+      }
+    }
+    &_item {
+      .Tags {
+        margin-top: 8px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .text {
+    font-size: $text-20;
+  }
+}

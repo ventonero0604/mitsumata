@@ -202,7 +202,7 @@ Template Post Type: page
         </div>
       </div>
     </div>
-	<!--<div class="Wrapper">
+    <!--<div class="Wrapper">
       <a href="https://reserva.be/kurobegenryu2024/reserve?mode=htl&evt_no=42eJwzNDezsAAAAyABDw&room_num=1&people=1.0.0.0" class="Button Button_toForm" target="_blank">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_calendar.svg" alt="">
         <span>湯俣山荘</span>
@@ -221,6 +221,49 @@ Template Post Type: page
     </div>
     <?php get_footer(); ?>
   </div>
+
+  <?php
+  // 'blog'カスタムポストタイプで、タグが'yumata'の最新の記事を1件取得するクエリ
+  $args = array(
+    'post_type' => 'blog', // カスタムポストタイプ名
+    'posts_per_page' => 1, // 表示する投稿数
+    'tag' => 'yumata' // タグに基づくフィルタリング
+  );
+
+  $query = new WP_Query($args);
+
+  if ($query->have_posts()) {
+    while ($query->have_posts()) {
+      $query->the_post();
+  ?>
+      <div class="FloatingBanner -yumata">
+        <a href="<?php the_permalink(); ?>">
+          <div class="texts">
+            <p class="heading">湯俣山荘BLOG</p>
+            <p class="date"><?php echo get_the_date('Y.m.d'); ?></p>
+            <p class="text"><?php the_title(); ?></p>
+          </div>
+          <figure class="image">
+            <?php
+            if (has_post_thumbnail()) {
+              the_post_thumbnail('full', array('alt' => get_the_title()));
+            }
+            ?>
+          </figure>
+        </a>
+        <button class="close js-banner-close">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/ico_close.svg" alt="">
+        </button>
+      </div>
+  <?php
+    }
+  } else {
+    // 該当する記事がない場合は非表示
+  }
+
+  // メインクエリのポストデータをリセット
+  wp_reset_postdata();
+  ?>
 
   <a href="#" class="PageTop">PAGE TOP</a>
 

@@ -13,7 +13,7 @@
         </li>
       </ul>
       <div class="Article_contents">
-        <ul class="FeatureList">
+        <ul class="BlogList">
           <?php
           $posts_per_page = 5; // 1ページに表示する記事数
           $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -29,15 +29,32 @@
             while ($query->have_posts()) {
               $query->the_post();
           ?>
-              <li class="FeatureList_item">
-                <a href="<?php the_permalink(); ?>" class="FeatureList_link">
-                  <div class="text">
-                    <p><?php the_title(); ?></p>
+              <li class="BlogList_item">
+                <div class="contents">
+                  <div class="BlogList_link">
+                    <p class="date"><?php the_time('Y.m.d'); ?></p>
+                    <div class="text">
+                      <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                      <ul class="Tags">
+                        <?php
+                        $post_tags = get_the_tags();
+                        if ($post_tags) {
+                          foreach ($post_tags as $tag) {
+                            // 直接URLにクエリパラメータを追加
+                            $tag_link_with_post_type = get_tag_link($tag->term_id) . '?post_type=blog';
+                            echo '<li><a href="' . esc_url($tag_link_with_post_type) . '" class="tag">#' . esc_html($tag->name) . '</a></li>';
+                          }
+                        }
+                        ?>
+                      </ul>
+                    </div>
                   </div>
-                  <figure class="image">
-                    <?php the_post_thumbnail(); ?>
-                  </figure>
-                </a>
+                  <a href="<?php the_permalink(); ?>">
+                    <figure class="image">
+                      <?php the_post_thumbnail(); ?>
+                    </figure>
+                  </a>
+                </div>
               </li>
           <?php
             }

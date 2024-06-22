@@ -1,7 +1,7 @@
 .Top {
   &_main {
     background-size: cover;
-    height: 100vh;
+    height: 100svh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -292,6 +292,29 @@
       }
     }
 
+    &_floating_banner {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 8px;
+      width: pxvw(335, "sp");
+      .texts {
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .title {
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+      }
+      .date {
+        font-size: 1.2rem;
+      }
+      .text {
+        font-size: 1.3rem;
+      }
+    }
+
     &_itoshindo {
       padding: 85px 0 100px;
       margin-top: 120px;
@@ -326,6 +349,12 @@
 
     &_carousel {
       padding-block: 30px 100px;
+    }
+
+    &_banner {
+      .container {
+        padding-block: 40px;
+      }
     }
   }
 }

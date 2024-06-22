@@ -10,17 +10,37 @@
         <source src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/main_sp.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="Top_floating_banner">
-      <a href="#" class="banner">
-        <p class="title">お知らせ</p>
-        <div class="texts">
-          <p class="date">2024.03.01</p>
-          <p class="text">
-            2024年度 三俣グループ山小屋スタッフ募集
-          </p>
-        </div>
-      </a>
-    </div>
+    <?php
+    // 最新のお知らせを一件取得するためのクエリパラメータ
+    $args = array(
+      'post_type' => 'news', // 投稿タイプを news に指定
+      'posts_per_page' => 1, // 一件のみ取得
+    );
+
+    // WP_Query インスタンスを作成してクエリを実行
+    $query = new WP_Query($args);
+
+    // 投稿がある場合
+    if ($query->have_posts()) {
+      // 投稿データをセット
+      $query->the_post();
+    ?>
+      <div class="Top_floating_banner">
+        <a href="<?php the_permalink(); ?>" class="banner">
+          <p class="title">お知らせ</p>
+          <div class="texts">
+            <p class="date"><?php the_time('Y.m.d'); ?></p>
+            <p class="text">
+              <?php the_title(); ?>
+            </p>
+          </div>
+        </a>
+      </div>
+    <?php
+      // 投稿データをリセット
+      wp_reset_postdata();
+    }
+    ?>
   </section>
 
   <section class="Top_lead" id="lead">
@@ -34,6 +54,29 @@
         一般登山者からハイカー、エコロジストからアスリートまでをもその大きな懐に抱え、<br />
         いつの日か帰る場所を教えるように、凛と存在している
       </p>
+    </div>
+  </section>
+
+  <section class="Top_banner">
+    <div class="container">
+      <a href="#" class="Top_banner_link">
+        <picture>
+          <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_1.png" media="(min-width: 768px)">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_1_sp.png" alt="三俣グループ山小屋スタッフ募集">
+        </picture>
+      </a>
+      <a href="#" class="Top_banner_link">
+        <picture>
+          <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_2.png" media="(min-width: 768px)">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_2_sp.png" alt="山荘予約開始">
+        </picture>
+      </a>
+      <a href="#" class="Top_banner_link">
+        <picture>
+          <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_3.png" media="(min-width: 768px)">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/dist/img/top_info_banner_3_sp.png" alt="イベント開催">
+        </picture>
+      </a>
     </div>
   </section>
 
