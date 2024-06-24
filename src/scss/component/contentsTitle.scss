@@ -22,7 +22,18 @@
   }
 }
 
-@include breakPoint(tablet) {
+@include breakPoint(sp) {
   .ContentsTitle {
+    font-size: 1.8rem;
+    span {
+      font-size: 1.5rem;
+    }
+    &-small {
+      font-size: $text-20;
+      span {
+        font-size: $text-12;
+        margin-top: 20px;
+      }
+    }
   }
 }

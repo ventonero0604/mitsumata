@@ -59,8 +59,18 @@
     left: 50%;
     transform: translateX(-50%);
     width: pxvw(335, sp);
+    &.-itoshindo {
+      position: relative;
+      bottom: unset;
+      margin-block: 40px;
+      z-index: unset;
+      button {
+        display: none;
+      }
+    }
     a {
       padding: 12px 20px;
+      justify-content: space-between;
       .texts {
         flex: 1;
       }
