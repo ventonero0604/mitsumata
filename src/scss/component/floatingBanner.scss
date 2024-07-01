@@ -60,13 +60,7 @@
     transform: translateX(-50%);
     width: pxvw(335, sp);
     &.-itoshindo {
-      position: relative;
-      bottom: unset;
-      margin-block: 40px;
-      z-index: unset;
-      button {
-        display: none;
-      }
+      position: absolute;
     }
     a {
       padding: 12px 20px;

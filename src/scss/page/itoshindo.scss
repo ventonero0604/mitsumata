@@ -1,3 +1,12 @@
+.Main {
+  aspect-ratio: 16 / 9;
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .Itoshindo {
   max-width: 1200px;
   padding-top: 120px;
@@ -17,11 +26,12 @@
     display: grid;
     gap: 40px;
     width: 100%;
+    place-items: center;
     &.center {
       margin-inline: auto;
     }
     &.between {
-      flex-direction: column;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -43,21 +53,10 @@
     }
   }
 
-  .Main {
-    margin-inline: calc(((100vw - 100%) / 2) * -1);
-    aspect-ratio: 16 / 9;
-    video {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
   .Important {
     place-items: center;
 
     .text {
-      font-size: 20px;
       line-height: 2;
     }
   }
@@ -126,13 +125,15 @@
       line-height: 1;
     }
     .text {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      margin-top: -20px;
     }
   }
 
   .Guide {
     .lead {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      text-align: center;
     }
     .list {
       display: grid;
@@ -164,9 +165,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Main {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   .Itoshindo {
     max-width: unset;
-    padding-top: unset;
+    padding-top: 60px;
     margin-inline: unset;
     gap: 80px;
     width: 100%;
@@ -182,17 +194,17 @@
       display: grid;
       gap: 40px;
       &.center {
-        margin-inline: auto;
+        margin-inline: unset;
       }
       &.between {
-        display: flex;
-        justify-content: space-between;
+        grid-template-columns: 1fr;
       }
     }
 
     .Item {
       display: grid;
       gap: 40px;
+      width: 100%;
       .live {
         width: 100%;
         aspect-ratio: 495 / 371;
@@ -208,22 +220,11 @@
       }
     }
 
-    .Main {
-      margin-inline: -20px;
-      aspect-ratio: 1 / 1;
-      width: 100%;
-      video {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-    }
-
     .Important {
       place-items: center;
 
       .text {
-        font-size: 18px;
+        font-size: 1.5rem;
       }
     }
 
@@ -242,6 +243,7 @@
         display: flex;
         align-items: center;
         gap: 40px;
+        font-size: 1.5rem;
       }
       .img {
         img {
@@ -258,6 +260,7 @@
       .text {
         text-align: center;
         line-height: 2;
+        font-size: 1.5rem;
       }
     }
 
@@ -269,14 +272,16 @@
         gap: 40px;
         li {
           display: grid;
-          gap: 30px;
+          gap: 20px;
           text-align: left;
           height: unset;
           max-width: unset;
+          .text {
+            font-size: 1.5rem;
+          }
           figure {
             aspect-ratio: 1 / 1;
             max-height: unset;
-
             display: block;
             img {
               object-fit: cover;
@@ -293,14 +298,13 @@
         font-size: 2.5rem;
       }
       .text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
     }
 
     .Guide {
       .lead {
-        font-size: 2rem;
-        line-height: 2;
+        text-align: left;
       }
       .list {
         display: grid;
@@ -309,7 +313,7 @@
         li {
           a {
             display: grid;
-            gap: 30px;
+            gap: 20px;
           }
           span {
             display: flex;

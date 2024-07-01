@@ -10,24 +10,23 @@
   {{> header isBlack=true}}
 
   <div class="Main">
-    <video class="pc" src="/img/main.mp4" playsinline muted autoplay loop></video>
-    <video class="sp" src="/img/main_sp.mp4" playsinline muted autoplay loop></video>
-  </div>
-
-  <div class="FloatingBanner -itoshindo">
-    <a href="#">
-      <div class="texts">
-        <p class="heading">伊藤新道BLOG</p>
-        <p class="date">2024.04.03</p>
-        <p class="text">HPをリニューアルしました</p>
-      </div>
-      <figure class="image">
-        <img src="/img/itoshindo/img_floating_bnr.png" alt="">
-      </figure>
-    </a>
-    <button class="close js-banner-close">
-      <img src="/img/ico_close.svg" alt="">
-    </button>
+    <video class="pc video" src="/img/itoshindo/main.mp4" playsinline muted autoplay loop></video>
+    <video class="sp video" src="/img/itoshindo/main_sp.mp4" playsinline muted autoplay loop></video>
+    <div class="FloatingBanner -itoshindo">
+      <a href="#">
+        <div class="texts">
+          <p class="heading">伊藤新道BLOG</p>
+          <p class="date">2024.04.03</p>
+          <p class="text">HPをリニューアルしました</p>
+        </div>
+        <figure class="image">
+          <img src="/img/itoshindo/img_floating_bnr.png" alt="">
+        </figure>
+      </a>
+      <button class="close js-banner-close">
+        <img src="/img/ico_close.svg" alt="">
+      </button>
+    </div>
   </div>
 
   <main class="Itoshindo">
@@ -99,20 +98,23 @@
             現在<span>Real Time</span></p>
         </div>
       </div>
+      <div class="mt-10">
+        <h3 class="ContentsTitle ContentsTitle-center ContentsTitle-small">増水時と平水時の参考水位</h3>
+        <p class="text-center mt-7">
+          第1吊橋の増水時と平水時の参考水位画像です。<br>
+          第1吊橋を通行する際にライブカメラで水量を確認してから通行してください。
+        </p>
+      </div>
       <div class="Items between">
         <div class="Item large">
           <figure>
             <img src="/img/itoshindo/img_cam_1.png" alt="">
           </figure>
-          <p class="ContentsTitle ContentsTitle-center ContentsTitle-small">
-            増水時<span>Danger</span></p>
         </div>
         <div class="Item large">
           <figure>
             <img src="/img/itoshindo/img_cam_2.png" alt="">
           </figure>
-          <p class="ContentsTitle ContentsTitle-center ContentsTitle-small">
-            平水時<span>Safety</span></p>
         </div>
       </div>
       <h4 class="ContentsTitle ContentsTitle-center ContentsTitle-small mt-10">第3吊橋</h4>
@@ -373,10 +375,17 @@
         インスタグラム<span>INSTAGRAM</span></h3>
     </section>
 
-    {{> footer}}
-
 
   </main>
+
+  <div class="Wrapper mt-25">
+    <ul class="BreadCrumb">
+      <li><a href="/">TOP</a></li>
+      <li>伊藤新道</li>
+    </ul>
+  </div>
+  {{> footer}}
+
   <script type="module" src="/js/main.js"></script>
 </body>
 
