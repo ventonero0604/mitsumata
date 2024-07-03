@@ -1,5 +1,12 @@
+.PageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
 .Main {
-  aspect-ratio: 16 / 9;
+  width: 100%;
   video {
     object-fit: cover;
     width: 100%;
@@ -41,9 +48,10 @@
     .live {
       width: 550px;
       aspect-ratio: 495 / 371;
+      overflow: hidden;
     }
     &.large {
-      width: 511px;
+      max-width: 511px;
     }
     iframe {
       object-fit: cover;
@@ -208,6 +216,8 @@
       .live {
         width: 100%;
         aspect-ratio: 495 / 371;
+        overflow: hidden;
+        max-width: 100%;
       }
       &.large {
         width: 100%;

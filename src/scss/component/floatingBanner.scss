@@ -60,7 +60,7 @@
     transform: translateX(-50%);
     width: pxvw(335, sp);
     &.-itoshindo {
-      position: absolute;
+      position: fixed;
     }
     a {
       padding: 12px 20px;

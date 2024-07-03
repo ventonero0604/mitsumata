@@ -3,14 +3,10 @@
 テーマ内でよく使う処理
 --------------------------------------- */
 //wp_head()で出力される内容にCSS読み込み設定を記述します。複数のスタイルシートを設定したい場合など、都度HTMLの<head>〜</head>に記述しなくてよく管理上便利です。
-function register_stylesheet()
-{
-  wp_register_style('style', get_template_directory_uri() . '/dist/assets/css/style.css');
-}
 function add_stylesheet()
 {
-  register_stylesheet();
-  wp_enqueue_style('style', '', array(), '1.0', false);
+  $version = date('YmdHis'); // 現在の日時をバージョンとして使用
+  wp_enqueue_style('style', get_template_directory_uri() . '/dist/assets/css/style.css', array(), $version, false);
 }
 add_action('wp_enqueue_scripts', 'add_stylesheet');
 
