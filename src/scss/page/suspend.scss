@@ -1,0 +1,194 @@
+.Info {
+  &_main {
+    position: relative;
+  }
+
+  &_wrapper {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    &-mitsumata {
+      background-image: url(../../img/mitsumata/bg_info.jpg);
+    }
+    &-suisho {
+      background-image: url(../../img/suisho/bg_info.jpg);
+    }
+    &-yumata {
+      background-image: url(../../img/yumata/bg_info.jpg);
+    }
+  }
+
+  &_contents {
+    max-width: 1000px;
+    padding-top: 160px;
+    margin-inline: auto;
+    padding-inline: 20px;
+    .ContentsTitle {
+      margin-bottom: 70px;
+    }
+  }
+
+  &_container {
+    position: relative;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 3%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    z-index: 10;
+    padding-top: 140px;
+  }
+
+  &_text {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: baseline;
+    line-height: 2;
+
+    &_wrapper {
+      border-bottom: 1px solid $gray-1;
+      padding-bottom: 100px;
+      margin-bottom: 100px;
+      &-nb {
+        border-bottom: none;
+        margin-bottom: unset;
+        padding-bottom: 50vh;
+      }
+      .slick-slide {
+        padding-inline: 20px;
+        img {
+          opacity: 0.4;
+          display: block;
+          height: 100%;
+          max-height: 600px;
+          transform: scale(0.8);
+        }
+      }
+      .slick-center {
+        transform-origin: center center;
+        img {
+          opacity: 1;
+          transition: opacity 0.3s ease-in;
+          transform: scale(1);
+          max-height: 600px;
+          object-fit: contain;
+          object-position: center;
+          transform-origin: center;
+        }
+      }
+      .slick-dots {
+        bottom: -60px;
+      }
+    }
+
+    &-image {
+      align-items: flex-start;
+    }
+
+    a {
+      font-size: $text-20;
+    }
+
+    small {
+      a {
+        font-size: inherit;
+      }
+    }
+
+    & + & {
+      margin-top: 20px;
+    }
+
+    & + .ContentsTitle {
+      margin-top: 100px;
+    }
+
+    .col2 {
+      display: grid;
+      grid-template-columns: 70px 1fr 1fr;
+    }
+    .col3 {
+      display: grid;
+      grid-template-columns: 70px 152px 1fr;
+    }
+
+    small {
+      font-size: $text-13;
+    }
+  }
+
+  &_back {
+    text-align: right;
+    margin-top: 75px;
+  }
+}
+
+@include breakPoint(1500) {
+  .Info {
+    &_menu {
+      display: none;
+    }
+  }
+}
+
+@include breakPoint(sp) {
+  .Info {
+    &_wrapper {
+      &-mitsumata {
+        background-image: url(../../img/mitsumata/bg_info_sp.jpg);
+      }
+      &-suisho {
+        background-image: url(../../img/suisho/bg_info_sp.jpg);
+      }
+      &-yumata {
+        background-image: url(../../img/yumata/bg_info_sp.jpg);
+      }
+    }
+    &_contents {
+      .ContentsTitle {
+        margin-bottom: 50px;
+      }
+    }
+    .slick-slide {
+      img {
+        max-height: unset;
+        max-width: 100vw;
+      }
+    }
+    .slick-center {
+      img {
+        max-height: unset;
+        max-width: 100vw;
+      }
+    }
+    &_text {
+      grid-template-columns: 1fr;
+      & + .ContentsTitle {
+        margin-top: 50px;
+      }
+      .col2 {
+        grid-template-columns: 1fr;
+      }
+      .col3 {
+        grid-template-columns: 1fr 1fr;
+        white-space: nowrap;
+        p {
+          grid-column: 1 / 3;
+        }
+      }
+      &_wrapper {
+        padding-bottom: 60px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
